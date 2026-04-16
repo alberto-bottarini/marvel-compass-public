@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She-Hulk — Marvel Compass</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/en/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/heroes/she-hulk/"
+         class="lang-switch lang-switch--active"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">EN</a><a href="/it/heroes/she-hulk/"
+         class="lang-switch"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">IT</a><a href="/es/heroes/she-hulk/"
+         class="lang-switch"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">ES</a><a href="/fr/heroes/she-hulk/"
+         class="lang-switch"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">FR</a><a href="/de/heroes/she-hulk/"
+         class="lang-switch"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">DE</a></nav>
+  </header>
+  <main>
+    
+    <div class="hero-detail">
+      <div class="hero-detail__header">
+        <img src="https://marvelcdb.com/bundles/cards/01019a.png" alt="She-Hulk" class="hero-detail__img" onerror="this.style.display='none'" />
+        <div class="hero-detail__info">
+          <a href="/en/" class="back-link">← All Heroes</a>
+          <h1 class="hero-detail__name">She-Hulk</h1>
+          <div class="hero-detail__stats"><span class="stat"><strong>15</strong> HP</span><span class="stat"><strong>4</strong> Hand Size</span><span class="stat"><strong>154</strong> Decks Analyzed</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="cards-section">
+      <div class="filters" id="filters">
+        <span class="filters__label">Filter:</span>
+
+        <select id="filter-type" class="filter-select">
+          <option value="">All Types</option>
+          <option value="ally">Ally</option><option value="event">Event</option><option value="resource">Resource</option><option value="support">Support</option><option value="upgrade">Upgrade</option>
+        </select>
+
+        <select id="filter-faction" class="filter-select">
+          <option value="">All Aspects</option>
+          <option value="aggression">Aggression</option><option value="basic">Basic</option><option value="justice">Justice</option><option value="leadership">Leadership</option><option value="protection">Protection</option>
+        </select>
+
+        <select id="filter-cost" class="filter-select">
+          <option value="">Any Cost</option>
+          <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>
+        </select>
+
+        <button id="filter-reset" class="filter-reset">Reset</button>
+        <span class="filters__count" id="result-count"></span>
+      </div>
+
+      <div class="card-list" id="card-list">
+        
+  <a href="/en/cards/01090/" class="card-row"
+     data-type="resource"
+     data-faction="basic"
+     data-cost="">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01090.png" alt="Strength" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Strength</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Resource</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per deck.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:99%"></div>
+        </div>
+        <span class="freq-label">98.7<span class="freq-label__decks"> · 152/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01089/" class="card-row"
+     data-type="resource"
+     data-faction="basic"
+     data-cost="">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01089.png" alt="Genius" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Genius</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Resource</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per deck.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:94%"></div>
+        </div>
+        <span class="freq-label">94.2<span class="freq-label__decks"> · 145/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01088/" class="card-row"
+     data-type="resource"
+     data-faction="basic"
+     data-cost="">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01088.png" alt="Energy" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Energy</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Resource</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per deck.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:92%"></div>
+        </div>
+        <span class="freq-label">92.2<span class="freq-label__decks"> · 142/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01092/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01092.png" alt="Helicarrier" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Helicarrier</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per player.
+<b>Action</b>: Exhaust Helicarrier → choose a player. Reduce the resource cost of the next card that player plays this phase by 1.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:86%"></div>
+        </div>
+        <span class="freq-label">85.7<span class="freq-label__decks"> · 132/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01091/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01091.png" alt="Avengers Mansion" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Avengers Mansion</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per player.
+<b>Action</b>: Exhaust Avengers Mansion → choose a player. That player draws 1 card.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:80%"></div>
+        </div>
+        <span class="freq-label">79.9<span class="freq-label__decks"> · 123/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01084/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01084.png" alt="Nick Fury" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Nick Fury</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Forced Response</b>: After Nick Fury enters play, choose one: remove 2 threat from a scheme, draw 3 cards, or deal 4 damage to an enemy. At the end of the round, if Nick Fury is still in play, discard him.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:64%"></div>
+        </div>
+        <span class="freq-label">63.6<span class="freq-label__decks"> · 98/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01083/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01083.png" alt="Mockingbird" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Mockingbird</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After Mockingbird enters play, stun an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:60%"></div>
+        </div>
+        <span class="freq-label">59.7<span class="freq-label__decks"> · 92/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01086/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01086.png" alt="First Aid" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">First Aid</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Action</b>: Heal 2 damage from any character.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:49%"></div>
+        </div>
+        <span class="freq-label">49.4<span class="freq-label__decks"> · 76/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01060/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01060.png" alt="For Justice!" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">For Justice!</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(thwart)</i>: Remove 3 threat from a scheme (4 threat instead if you paid for this card using a [mental] resource).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:38%"></div>
+        </div>
+        <span class="freq-label">37.7<span class="freq-label__decks"> · 58/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01058/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01058.png" alt="Daredevil" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Daredevil</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After Daredevil thwarts, deal 1 damage to an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:37%"></div>
+        </div>
+        <span class="freq-label">37.0<span class="freq-label__decks"> · 57/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01062/" class="card-row"
+     data-type="resource"
+     data-faction="justice"
+     data-cost="">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01062.png" alt="The Power of Justice" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">The Power of Justice</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Resource</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Max 2 per deck.
+Double the number of resources this card generates while paying for a Justice <i>(yellow)</i> card.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:36%"></div>
+        </div>
+        <span class="freq-label">36.4<span class="freq-label__decks"> · 56/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01059/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01059.png" alt="Jessica Jones" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Jessica Jones</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Jessica Jones gets +1 THW for each side scheme in play.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:36%"></div>
+        </div>
+        <span class="freq-label">35.7<span class="freq-label__decks"> · 55/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05023/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05023.png" alt="Endurance" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Endurance</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play under any player's control. Max 1 per player.
+You get +3 hit points.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:32%"></div>
+        </div>
+        <span class="freq-label">32.5<span class="freq-label__decks"> · 50/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01064/" class="card-row"
+     data-type="support"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01064.png" alt="Surveillance Team" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Surveillance Team</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Uses (3 snoop counters). <i>(Enters play with 3 counters. When those are gone, discard this card)</i>
+<b>Action</b>: Exhaust Surveillance Team and remove 1 snoop counter from it → remove 1 threat from a scheme.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:32%"></div>
+        </div>
+        <span class="freq-label">31.8<span class="freq-label__decks"> · 49/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01055/" class="card-row"
+     data-type="resource"
+     data-faction="aggression"
+     data-cost="">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01055.png" alt="The Power of Aggression" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">The Power of Aggression</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Resource</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Max 2 per deck.
+Double the number of resources this card generates while paying for a Aggression <i>(red)</i> card.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:31%"></div>
+        </div>
+        <span class="freq-label">30.5<span class="freq-label__decks"> · 47/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05033/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05033.png" alt="Down Time" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Down Time</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play under any player's control. Max 1 per player.
+Your alter-ego gets +2 REC.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:30%"></div>
+        </div>
+        <span class="freq-label">29.9<span class="freq-label__decks"> · 46/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01057/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01057.png" alt="Combat Training" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Combat Training</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play under any player's control. Max 1 per player.
+Your hero gets +1 ATK.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:29%"></div>
+        </div>
+        <span class="freq-label">28.6<span class="freq-label__decks"> · 44/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01093/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01093.png" alt="Tenacity" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Tenacity</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b>: Spend a [physical] resource and discard this card → ready your hero.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:29%"></div>
+        </div>
+        <span class="freq-label">28.6<span class="freq-label__decks"> · 44/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01063/" class="card-row"
+     data-type="support"
+     data-faction="justice"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01063.png" alt="Interrogation Room" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Interrogation Room</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per player.
+<b>Response</b>: After you defeat a minion, exhaust Interrogation Room → remove 1 threat from a scheme.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:27%"></div>
+        </div>
+        <span class="freq-label">26.6<span class="freq-label__decks"> · 41/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01061/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01061.png" alt="Great Responsibility" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Great Responsibility</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Interrupt</b>: When any amount of threat would be placed on a scheme, you take it as damage instead.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:26%"></div>
+        </div>
+        <span class="freq-label">26.0<span class="freq-label__decks"> · 40/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01087/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01087.png" alt="Haymaker" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Haymaker</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Deal 3 damage to an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:25%"></div>
+        </div>
+        <span class="freq-label">25.3<span class="freq-label__decks"> · 39/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01050/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01050.png" alt="Hulk" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Hulk</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Forced Response</b>: After Hulk attacks, discard the top card of your deck. If that card's printed resource has:
+[physical] - Deal 2 damage to an enemy.
+[energy] - Deal 1 damage to each character.
+[mental] - Discard Hulk.
+[wild] - All of the above.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:25%"></div>
+        </div>
+        <span class="freq-label">24.7<span class="freq-label__decks"> · 38/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01051/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01051.png" alt="Tigra" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Tigra</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After Tigra attacks and defeats a minion, heal 1 damage from her.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:24%"></div>
+        </div>
+        <span class="freq-label">24.0<span class="freq-label__decks"> · 37/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01054/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01054.png" alt="Uppercut" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Uppercut</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Deal 5 damage to an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:23%"></div>
+        </div>
+        <span class="freq-label">23.4<span class="freq-label__decks"> · 36/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01052/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01052.png" alt="Chase Them Down" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Chase Them Down</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b> <i>(thwart)</i>: After your hero attacks and defeats an enemy, remove 2 threat from a scheme.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:21%"></div>
+        </div>
+        <span class="freq-label">21.4<span class="freq-label__decks"> · 33/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01053/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01053.png" alt="Relentless Assault" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Relentless Assault</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Deal 5 damage to a minion. If you paid for this card using a [physical] resource, this attack gains overkill. <i>(Excess damage from this attack is dealt to the villain.)</i></p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:21%"></div>
+        </div>
+        <span class="freq-label">21.4<span class="freq-label__decks"> · 33/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01085/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01085.png" alt="Emergency" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Emergency</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interrupt</b> <i>(thwart)</i>: When the villain schemes, reduce the amount of threat placed on the scheme by 1.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:19%"></div>
+        </div>
+        <span class="freq-label">19.5<span class="freq-label__decks"> · 30/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01081/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01081.png" alt="Armored Vest" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Armored Vest</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play under any player's control. Max 1 per player.
+Your hero gets +1 DEF.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:17%"></div>
+        </div>
+        <span class="freq-label">16.9<span class="freq-label__decks"> · 26/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05031/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05031.png" alt="Concussive Blow" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Concussive Blow</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Confuse an enemy. If you paid for this card using a [physical] resource, deal 3 damage to that enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:17%"></div>
+        </div>
+        <span class="freq-label">16.9<span class="freq-label__decks"> · 26/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01065/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01065.png" alt="Heroic Intuition" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Heroic Intuition</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play under any player's control. Max 1 per player.
+Your hero gets +1 THW.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:17%"></div>
+        </div>
+        <span class="freq-label">16.9<span class="freq-label__decks"> · 26/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01082/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01082.png" alt="Indomitable" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Indomitable</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After your hero defends, discard indomitable → ready your hero.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:17%"></div>
+        </div>
+        <span class="freq-label">16.9<span class="freq-label__decks"> · 26/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03034/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03034.png" alt="Enhanced Awareness" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Enhanced Awareness</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Uses (3 mental counters).
+<b>Hero Resource</b>: Exhaust Enhanced Awareness and remove 1 mental counter from it → generate a [mental] resource.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:16%"></div>
+        </div>
+        <span class="freq-label">16.2<span class="freq-label__decks"> · 25/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01077/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01077.png" alt="Counter-Punch" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Counter-Punch</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b> <i>(attack)</i>: After your hero defends against an enemy attack, deal damage to that enemy equal to your hero's ATK.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:16%"></div>
+        </div>
+        <span class="freq-label">15.6<span class="freq-label__decks"> · 24/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01056/" class="card-row"
+     data-type="support"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01056.png" alt="Tac Team" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Tac Team</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Uses (3 attack counters). <i>(Enters play with 3 counters. When those are gone, discard this card)</i>
+<b>Action</b>: Exhaust Tac Team and remove 1 attack counter from it → deal 2 damage to an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:15%"></div>
+        </div>
+        <span class="freq-label">14.9<span class="freq-label__decks"> · 23/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06034/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06034.png" alt="Enhanced Physique" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Enhanced Physique</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Uses (3 physical counters).
+<b>Hero Resource</b>: Exhaust Enhanced Physique and remove 1 physical counter from it → generate a [physical] resource.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">14.3<span class="freq-label__decks"> · 22/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03032/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03032.png" alt="Followed" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Followed</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Attach to a side scheme. Max 1 per scheme.
+<b>Interrupt</b>: When attached scheme is defeated, deal 4 damage to an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">13.6<span class="freq-label__decks"> · 21/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01078/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01078.png" alt="Get Behind Me!" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Get Behind Me!</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Interrupt</b>: When a treachery card is revealed from the encounter deck, cancel its "<b>When Revealed</b>" effects. The villain attacks you instead.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">13.6<span class="freq-label__decks"> · 21/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01079/" class="card-row"
+     data-type="resource"
+     data-faction="protection"
+     data-cost="">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01079.png" alt="The Power of Protection" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">The Power of Protection</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Resource</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Max 2 per deck.
+Double the number of resources this card generates while paying for a Protection <i>(green)</i> card.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">13.6<span class="freq-label__decks"> · 21/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01076/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01076.png" alt="Luke Cage" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Luke Cage</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Toughness. <i>(This character enters play with a tough status card.)</i></p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">12.3<span class="freq-label__decks"> · 19/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01080/" class="card-row"
+     data-type="support"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01080.png" alt="Med Team" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Med Team</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Uses (3 medical counters). <i>(Enters play with 3 counters. When those are gone, discard this card.)</i>
+<b>Action</b>: Exhaust Med Team and remove 1 medical counter from it → heal 2 damage from a friendly character.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">12.3<span class="freq-label__decks"> · 19/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01072/" class="card-row"
+     data-type="resource"
+     data-faction="leadership"
+     data-cost="">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01072.png" alt="The Power of Leadership" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">The Power of Leadership</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Resource</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Max 2 per deck.
+Double the number of resources this card generates while paying for a Leadership <i>(blue)</i> card.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">12.3<span class="freq-label__decks"> · 19/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01075/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01075.png" alt="Black Widow" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Black Widow</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interrupt</b>: When a card is revealed from the encounter deck, exhaust Black Widow and spend a [mental] resource → cancel the effects of that card and discard it. Then, reveal another card from the encounter deck.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">11.7<span class="freq-label__decks"> · 18/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01066/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01066.png" alt="Hawkeye" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Hawkeye</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Hawkeye enters play with 4 arrow counters on him.
+<b>Response</b>: After a minion enters play, remove 1 arrow counter from Hawkeye → deal 2 damage to that minion.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">11.7<span class="freq-label__decks"> · 18/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06031/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06031.png" alt="Under Surveillance" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Under Surveillance</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Attach to the main scheme. Max 1 per scheme.
+Increase the target threat value of attached scheme by 4.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">11.7<span class="freq-label__decks"> · 18/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08023/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08023.png" alt="Quincarrier" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Quincarrier</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play only if your identity has the [[Avenger]] trait.
+<b>Resource</b>: Exhaust Quincarrier → generate a [wild] resource.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:10%"></div>
+        </div>
+        <span class="freq-label">10.4<span class="freq-label__decks"> · 16/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01068/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01068.png" alt="Vision" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Vision</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Action</b>: Spend a [energy] resource → choose THW or ATK. Until the end of the phase, Vision gets +2 to the chosen power. (Limit once per round.)</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:10%"></div>
+        </div>
+        <span class="freq-label">10.4<span class="freq-label__decks"> · 16/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06019/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06019.png" alt="Jarnbjorn" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Jarnbjorn</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Restricted.
+<b>Response:</b> After your hero attacks an enemy, spend a [physical] resource → deal 2 damage to an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:10%"></div>
+        </div>
+        <span class="freq-label">9.7<span class="freq-label__decks"> · 15/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03013/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03013.png" alt="Squirrel Girl" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Squirrel Girl</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After Squirrel Girl enters play, deal 1 damage to each enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:10%"></div>
+        </div>
+        <span class="freq-label">9.7<span class="freq-label__decks"> · 15/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03014/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03014.png" alt="Wonder Man" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Wonder Man</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">[star] As an additional cost for Wonder Man to attack, you must discard 1 card from your hand.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:10%"></div>
+        </div>
+        <span class="freq-label">9.7<span class="freq-label__decks"> · 15/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03024/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03024.png" alt="Avengers Tower" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Avengers Tower</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">If each of your allies has the [[Avenger]] trait, increase your ally limit by 1.
+<b>Action:</b> Exhaust Avengers Tower → reduce the cost of the next [[Avenger]] ally played this phase by 1.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:9%"></div>
+        </div>
+        <span class="freq-label">9.1<span class="freq-label__decks"> · 14/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03011/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03011.png" alt="Falcon" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Falcon</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After Falcon enters play, look at the top 3 cards of the encounter deck. For each treachery looked at this way, remove 1 threat from a scheme.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:9%"></div>
+        </div>
+        <span class="freq-label">9.1<span class="freq-label__decks"> · 14/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06017/" class="card-row"
+     data-type="support"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06017.png" alt="Hall of Heroes" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Hall of Heroes</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response:</b> After you defeat a minion, place 1 glory counter here.
+<b>Alter-Ego Action:</b> Exhaust Hall of Heroes and remove 3 glory counters from it → draw 3 cards.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">8.4<span class="freq-label__decks"> · 13/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01070/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01070.png" alt="Lead from the Front" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Lead from the Front</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b>: Choose a player. Each character that player controls gets +1 THW and +1 ATK until the end of the phase.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">8.4<span class="freq-label__decks"> · 13/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01071/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01071.png" alt="Make the Call" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Make the Call</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Action</b>: Pay the printed cost of an ally in any player's discard pile → put that ally into play under your control.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">8.4<span class="freq-label__decks"> · 13/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03019/" class="card-row"
+     data-type="support"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03019.png" alt="Quinjet" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Quinjet</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response:</b> After your turn begins, place 1 time counter on Quinjet.
+<b>Action:</b> Put an [[Avenger]] ally from your hand into play with printed cost equal to or less than the number of time counters on Quinjet. Then, discard Quinjet.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">8.4<span class="freq-label__decks"> · 13/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06018/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06018.png" alt="Battle Fury" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Battle Fury</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play under any player's control.
+Max 1 per player.
+<b>Response:</b> After your hero attacks and defeats a minion, deal 1 damage to your hero and discard Battle Fury → ready your hero.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.8<span class="freq-label__decks"> · 12/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05017/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05017.png" alt="Energy Barrier" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Energy Barrier</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Uses (3 reflection counters). <b>Interrupt:</b> When you would take any amount of damage, remove 1 reflection counter from here → prevent 1 of that damage and deal 1 damage to an enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.8<span class="freq-label__decks"> · 12/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01067/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01067.png" alt="Maria Hill" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Maria Hill</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After Maria Hill enters play, each player draws 1 card.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.8<span class="freq-label__decks"> · 12/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06015/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06015.png" alt="Mean Swing" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Mean Swing</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Interrupt</b>: When your hero makes a basic attack, exhaust a [[Weapon]] upgrade on your hero → your hero gets +3 ATK for this attack.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.8<span class="freq-label__decks"> · 12/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03017/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03017.png" alt="Strength In Numbers" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Strength In Numbers</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Action</b>: Exhaust any number of allies you control → draw 1 card for each ally exhausted this way.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.8<span class="freq-label__decks"> · 12/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01073/" class="card-row"
+     data-type="support"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01073.png" alt="The Triskelion" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">The Triskelion</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Support</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Increase your ally limit by 1. <i>(This allows you to control more than 3 allies.)</i></p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.8<span class="freq-label__decks"> · 12/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06021/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06021.png" alt="Invulnerability" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Invulnerability</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b>: Give your hero a tough status card.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:7%"></div>
+        </div>
+        <span class="freq-label">7.1<span class="freq-label__decks"> · 11/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05014/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05014.png" alt="Preemptive Strike" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Preemptive Strike</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Interrupt</b> <i>(defense)</i>: When a boost card is turned face up while the villain attacks, cancel all boost icons ([boost]) on that card. Then deal 1 damage to the villain for each boost icon cancelled this way.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:7%"></div>
+        </div>
+        <span class="freq-label">7.1<span class="freq-label__decks"> · 11/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06012/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06012.png" alt="Valkyrie" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Valkyrie</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response:</b> After Valkyrie enters play, deal 2 damage to a minion (3 damage instead if you paid for this card using a [energy] resource).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:7%"></div>
+        </div>
+        <span class="freq-label">7.1<span class="freq-label__decks"> · 11/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05015/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05015.png" alt="Tackle" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Tackle</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Stun an enemy. If you paid for this card using a [physical] resource, deal 3 damage to that enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:6%"></div>
+        </div>
+        <span class="freq-label">6.5<span class="freq-label__decks"> · 10/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05030/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05030.png" alt="Melee" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Melee</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Deal 3 damage to an enemy. Deal 3 damage to another enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:6%"></div>
+        </div>
+        <span class="freq-label">5.8<span class="freq-label__decks"> · 9/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08030/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08030.png" alt="Counterattack" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Counterattack</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per player.
+<b>Hero Response</b> <i>(attack)</i>: After you take damage from an enemy attack, discard Counterattack → deal an equal amount of damage to that enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.2<span class="freq-label__decks"> · 8/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01069/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01069.png" alt="Get Ready" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Get Ready</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Action</b>: Ready an ally.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.2<span class="freq-label__decks"> · 8/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03025/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03025.png" alt="Honorary Avenger" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Honorary Avenger</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play only if your identity has the [[Avenger]] trait.
+Max 1 per character.
+Attach to a friendly character.
+Attached character gets +1 hit point and gains the [[Avenger]] trait.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.2<span class="freq-label__decks"> · 8/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05012/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05012.png" alt="Nova" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Nova</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interrupt</b>: When an enemy initiates an attack against you, spend a [energy] resource → deal 2 damage to that enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.2<span class="freq-label__decks"> · 8/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03015/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03015.png" alt="Avengers Assemble!" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Avengers Assemble!</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per round.
+<b>Hero Action</b></i>: Ready each [[Avenger]] character you control. Until the end of the phase, each [[Avenger]] character in play gets +1 THW and +1 ATK.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">4.5<span class="freq-label__decks"> · 7/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/01074/" class="card-row"
+     data-type="upgrade"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/01074.png" alt="Inspired" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Inspired</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Attach to an ally. Max 1 per ally.
+Attached ally gets +1 THW and +1 ATK.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">4.5<span class="freq-label__decks"> · 7/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05018/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05018.png" alt="Lockjaw" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Lockjaw</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">You may play Lockjaw from your discard pile during your turn (paying his resource cost).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">4.5<span class="freq-label__decks"> · 7/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05024/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05024.png" alt="Enhanced Reflexes" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Enhanced Reflexes</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Uses (3 energy counters). <b>Hero Resource:</b> Exhaust Enhanced Reflexes and remove 1 energy counter from it → generate a [energy] resource.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:4%"></div>
+        </div>
+        <span class="freq-label">3.9<span class="freq-label__decks"> · 6/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03031/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03031.png" alt="Enraged" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Enraged</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Attach to an ally. Max 1 per ally.
+Attached ally gets +2 ATK and takes +1 consequential damage after it attacks.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:4%"></div>
+        </div>
+        <span class="freq-label">3.9<span class="freq-label__decks"> · 6/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/03033/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/03033.png" alt="Expert Defense" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Expert Defense</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Interrupt</b> <i>(defense)</i>: When your hero defends against an attack, it gets +3 DEF for that attack.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">3.3<span class="freq-label__decks"> · 5/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08012/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08012.png" alt="Quake" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Quake</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After a minion schemes, exhaust Quake → deal 2 damage to that minion.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">3.3<span class="freq-label__decks"> · 5/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06033/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06033.png" alt="Second Wind" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Second Wind</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Action</b>: Heal 4 damage from an identity (5 damage instead if you paid for this card using a [mental] resource).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">3.3<span class="freq-label__decks"> · 5/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08011/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08011.png" alt="Agent Coulson" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Agent Coulson</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response</b>: After Agent Coulson enters play, search your deck and discard pile for a [[Preparation]] card and add it to your hand. Shuffle your deck.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">2.6<span class="freq-label__decks"> · 4/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08017/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08017.png" alt="Counterintelligence" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Counterintelligence</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per player.
+<b>Interrupt</b>: When any amount of threat would be placed on the main scheme, discard Counterintelligence → prevent 3 of that threat.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">2.6<span class="freq-label__decks"> · 4/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06011/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="6">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06011.png" alt="Hercules" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Hercules</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">6</span>
+        </div>
+      </div>
+      <p class="card-row__text">Reduce the cost to play Hercules by 1 for each minion engaged with you.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">2.6<span class="freq-label__decks"> · 4/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08013/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08013.png" alt="Stealth Strike" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Stealth Strike</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Deal 4 damage to an enemy. If that enemy is defeated by this attack, remove 2 threat from a scheme.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">2.6<span class="freq-label__decks"> · 4/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06014/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06014.png" alt="Get Over Here!" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Get Over Here!</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggression</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b> <i>(attack)</i>: Deal 1 damage to a minion. If you have the [[Aerial]] trait, engage that enemy.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">1.9<span class="freq-label__decks"> · 3/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06020/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="5">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06020.png" alt="Heimdall" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Heimdall</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Ally</span>
+          <span class="badge badge--faction badge--faction-basic">Basic</span>
+          <span class="badge badge--cost">5</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Response:</b> After Heimdall enters play, look at the top 3 cards of the encounter deck. Discard 1 of them and put the others back in any order.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">1.9<span class="freq-label__decks"> · 3/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08032/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08032.png" alt="Defensive Stance" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Defensive Stance</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-protection">Protection</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per player.
+<b>Hero Interrupt</b>: When you would take any amount of damage, discard Defensive Stance → prevent 3 of that damage.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.3<span class="freq-label__decks"> · 2/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/05032/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/05032.png" alt="Morale Boost" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Morale Boost</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Action</b>: Choose a hero. Until the end of the round, that hero gets +1 THW, +1 ATK, and +1 DEF</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.3<span class="freq-label__decks"> · 2/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08031/" class="card-row"
+     data-type="upgrade"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08031.png" alt="Rapid Response" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Rapid Response</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Max 1 per player.
+<b>Hero Response</b>: After an ally you control is defeated, discard Rapid Response → put that ally into play from your discard pile and deal 1 damage to it.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.3<span class="freq-label__decks"> · 2/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/08018/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/08018.png" alt="Spycraft" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Spycraft</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Upgrade</span>
+          <span class="badge badge--faction badge--faction-justice">Justice</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Play only if you control a [[Spy]] character.
+<b>Interrupt</b>: When you reveal an encounter card, discard Spycraft → cancel the effects of that card and discard it. Then, reveal another card from the encounter deck.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.3<span class="freq-label__decks"> · 2/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/en/cards/06032/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://marvelcdb.com/bundles/cards/06032.png" alt="Teamwork" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Teamwork</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Event</span>
+          <span class="badge badge--faction badge--faction-leadership">Leadership</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Hero Interrupt</b> When you use your basic thwart power <i>(THW)</i> or basic attack power <i>(ATK)</i>, exhaust an ally you control → add that ally's matching power to your hero's power for this use.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.3<span class="freq-label__decks"> · 2/154 decks</span></span>
+      </div>
+    </div>
+  </a>
+      </div>
+    </section>
+
+    <script>
+      window.__HERO_CARDS__ = [{"code":"01090","name":"Strength","type_code":"resource","faction_code":"basic","cost":null,"text":"Max 1 per deck.","traits":"","imagesrc":"/bundles/cards/01090.png","url":"https://marvelcdb.com/card/01090","deck_count":152,"frequency":0.987},{"code":"01089","name":"Genius","type_code":"resource","faction_code":"basic","cost":null,"text":"Max 1 per deck.","traits":"","imagesrc":"/bundles/cards/01089.png","url":"https://marvelcdb.com/card/01089","deck_count":145,"frequency":0.9416},{"code":"01088","name":"Energy","type_code":"resource","faction_code":"basic","cost":null,"text":"Max 1 per deck.","traits":"","imagesrc":"/bundles/cards/01088.png","url":"https://marvelcdb.com/card/01088","deck_count":142,"frequency":0.9221},{"code":"01092","name":"Helicarrier","type_code":"support","faction_code":"basic","cost":3,"text":"Max 1 per player.\n<b>Action</b>: Exhaust Helicarrier → choose a player. Reduce the resource cost of the next card that player plays this phase by 1.","traits":"Location. S.H.I.E.L.D.","imagesrc":"/bundles/cards/01092.png","url":"https://marvelcdb.com/card/01092","deck_count":132,"frequency":0.8571},{"code":"01091","name":"Avengers Mansion","type_code":"support","faction_code":"basic","cost":4,"text":"Max 1 per player.\n<b>Action</b>: Exhaust Avengers Mansion → choose a player. That player draws 1 card.","traits":"Avenger. Location.","imagesrc":"/bundles/cards/01091.png","url":"https://marvelcdb.com/card/01091","deck_count":123,"frequency":0.7987},{"code":"01084","name":"Nick Fury","type_code":"ally","faction_code":"basic","cost":4,"text":"<b>Forced Response</b>: After Nick Fury enters play, choose one: remove 2 threat from a scheme, draw 3 cards, or deal 4 damage to an enemy. At the end of the round, if Nick Fury is still in play, discard him.","traits":"S.H.I.E.L.D. Spy.","imagesrc":"/bundles/cards/01084.png","url":"https://marvelcdb.com/card/01084","deck_count":98,"frequency":0.6364},{"code":"01083","name":"Mockingbird","type_code":"ally","faction_code":"basic","cost":3,"text":"<b>Response</b>: After Mockingbird enters play, stun an enemy.","traits":"S.H.I.E.L.D. Spy.","imagesrc":"/bundles/cards/01083.png","url":"https://marvelcdb.com/card/01083","deck_count":92,"frequency":0.5974},{"code":"01086","name":"First Aid","type_code":"event","faction_code":"basic","cost":1,"text":"<b>Action</b>: Heal 2 damage from any character.","traits":"","imagesrc":"/bundles/cards/01086.png","url":"https://marvelcdb.com/card/01086","deck_count":76,"frequency":0.4935},{"code":"01060","name":"For Justice!","type_code":"event","faction_code":"justice","cost":2,"text":"<b>Hero Action</b> <i>(thwart)</i>: Remove 3 threat from a scheme (4 threat instead if you paid for this card using a [mental] resource).","traits":"Thwart.","imagesrc":"/bundles/cards/01060.png","url":"https://marvelcdb.com/card/01060","deck_count":58,"frequency":0.3766},{"code":"01058","name":"Daredevil","type_code":"ally","faction_code":"justice","cost":4,"text":"<b>Response</b>: After Daredevil thwarts, deal 1 damage to an enemy.","traits":"Defender.","imagesrc":"/bundles/cards/01058.png","url":"https://marvelcdb.com/card/01058","deck_count":57,"frequency":0.3701},{"code":"01062","name":"The Power of Justice","type_code":"resource","faction_code":"justice","cost":null,"text":"Max 2 per deck.\nDouble the number of resources this card generates while paying for a Justice <i>(yellow)</i> card.","traits":"","imagesrc":"/bundles/cards/01062.png","url":"https://marvelcdb.com/card/01062","deck_count":56,"frequency":0.3636},{"code":"01059","name":"Jessica Jones","type_code":"ally","faction_code":"justice","cost":3,"text":"Jessica Jones gets +1 THW for each side scheme in play.","traits":"Defender.","imagesrc":"/bundles/cards/01059.png","url":"https://marvelcdb.com/card/01059","deck_count":55,"frequency":0.3571},{"code":"05023","name":"Endurance","type_code":"upgrade","faction_code":"basic","cost":1,"text":"Play under any player's control. Max 1 per player.\nYou get +3 hit points.","traits":"Condition.","imagesrc":"/bundles/cards/05023.png","url":"https://marvelcdb.com/card/05023","deck_count":50,"frequency":0.3247},{"code":"01064","name":"Surveillance Team","type_code":"support","faction_code":"justice","cost":2,"text":"Uses (3 snoop counters). <i>(Enters play with 3 counters. When those are gone, discard this card)</i>\n<b>Action</b>: Exhaust Surveillance Team and remove 1 snoop counter from it → remove 1 threat from a scheme.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01064.png","url":"https://marvelcdb.com/card/01064","deck_count":49,"frequency":0.3182},{"code":"01055","name":"The Power of Aggression","type_code":"resource","faction_code":"aggression","cost":null,"text":"Max 2 per deck.\nDouble the number of resources this card generates while paying for a Aggression <i>(red)</i> card.","traits":"","imagesrc":"/bundles/cards/01055.png","url":"https://marvelcdb.com/card/01055","deck_count":47,"frequency":0.3052},{"code":"05033","name":"Down Time","type_code":"upgrade","faction_code":"basic","cost":1,"text":"Play under any player's control. Max 1 per player.\nYour alter-ego gets +2 REC.","traits":"Condition.","imagesrc":"/bundles/cards/05033.png","url":"https://marvelcdb.com/card/05033","deck_count":46,"frequency":0.2987},{"code":"01057","name":"Combat Training","type_code":"upgrade","faction_code":"aggression","cost":2,"text":"Play under any player's control. Max 1 per player.\nYour hero gets +1 ATK.","traits":"Skill.","imagesrc":"/bundles/cards/01057.png","url":"https://marvelcdb.com/card/01057","deck_count":44,"frequency":0.2857},{"code":"01093","name":"Tenacity","type_code":"upgrade","faction_code":"basic","cost":2,"text":"<b>Hero Action</b>: Spend a [physical] resource and discard this card → ready your hero.","traits":"Condition.","imagesrc":"/bundles/cards/01093.png","url":"https://marvelcdb.com/card/01093","deck_count":44,"frequency":0.2857},{"code":"01063","name":"Interrogation Room","type_code":"support","faction_code":"justice","cost":1,"text":"Max 1 per player.\n<b>Response</b>: After you defeat a minion, exhaust Interrogation Room → remove 1 threat from a scheme.","traits":"Location.","imagesrc":"/bundles/cards/01063.png","url":"https://marvelcdb.com/card/01063","deck_count":41,"frequency":0.2662},{"code":"01061","name":"Great Responsibility","type_code":"event","faction_code":"justice","cost":0,"text":"<b>Hero Interrupt</b>: When any amount of threat would be placed on a scheme, you take it as damage instead.","traits":"","imagesrc":"/bundles/cards/01061.png","url":"https://marvelcdb.com/card/01061","deck_count":40,"frequency":0.2597},{"code":"01087","name":"Haymaker","type_code":"event","faction_code":"basic","cost":2,"text":"<b>Hero Action</b> <i>(attack)</i>: Deal 3 damage to an enemy.","traits":"Attack.","imagesrc":"/bundles/cards/01087.png","url":"https://marvelcdb.com/card/01087","deck_count":39,"frequency":0.2532},{"code":"01050","name":"Hulk","type_code":"ally","faction_code":"aggression","cost":2,"text":"<b>Forced Response</b>: After Hulk attacks, discard the top card of your deck. If that card's printed resource has:\n[physical] - Deal 2 damage to an enemy.\n[energy] - Deal 1 damage to each character.\n[mental] - Discard Hulk.\n[wild] - All of the above.","traits":"Avenger. Gamma.","imagesrc":"/bundles/cards/01050.png","url":"https://marvelcdb.com/card/01050","deck_count":38,"frequency":0.2468},{"code":"01051","name":"Tigra","type_code":"ally","faction_code":"aggression","cost":3,"text":"<b>Response</b>: After Tigra attacks and defeats a minion, heal 1 damage from her.","traits":"Avenger.","imagesrc":"/bundles/cards/01051.png","url":"https://marvelcdb.com/card/01051","deck_count":37,"frequency":0.2403},{"code":"01054","name":"Uppercut","type_code":"event","faction_code":"aggression","cost":3,"text":"<b>Hero Action</b> <i>(attack)</i>: Deal 5 damage to an enemy.","traits":"Attack.","imagesrc":"/bundles/cards/01054.png","url":"https://marvelcdb.com/card/01054","deck_count":36,"frequency":0.2338},{"code":"01052","name":"Chase Them Down","type_code":"event","faction_code":"aggression","cost":0,"text":"<b>Response</b> <i>(thwart)</i>: After your hero attacks and defeats an enemy, remove 2 threat from a scheme.","traits":"Thwart.","imagesrc":"/bundles/cards/01052.png","url":"https://marvelcdb.com/card/01052","deck_count":33,"frequency":0.2143},{"code":"01053","name":"Relentless Assault","type_code":"event","faction_code":"aggression","cost":2,"text":"<b>Hero Action</b> <i>(attack)</i>: Deal 5 damage to a minion. If you paid for this card using a [physical] resource, this attack gains overkill. <i>(Excess damage from this attack is dealt to the villain.)</i>","traits":"Attack.","imagesrc":"/bundles/cards/01053.png","url":"https://marvelcdb.com/card/01053","deck_count":33,"frequency":0.2143},{"code":"01085","name":"Emergency","type_code":"event","faction_code":"basic","cost":0,"text":"<b>Interrupt</b> <i>(thwart)</i>: When the villain schemes, reduce the amount of threat placed on the scheme by 1.","traits":"Thwart.","imagesrc":"/bundles/cards/01085.png","url":"https://marvelcdb.com/card/01085","deck_count":30,"frequency":0.1948},{"code":"01081","name":"Armored Vest","type_code":"upgrade","faction_code":"protection","cost":1,"text":"Play under any player's control. Max 1 per player.\nYour hero gets +1 DEF.","traits":"Armor.","imagesrc":"/bundles/cards/01081.png","url":"https://marvelcdb.com/card/01081","deck_count":26,"frequency":0.1688},{"code":"05031","name":"Concussive Blow","type_code":"event","faction_code":"justice","cost":3,"text":"<b>Hero Action</b> <i>(attack)</i>: Confuse an enemy. If you paid for this card using a [physical] resource, deal 3 damage to that enemy.","traits":"Attack.","imagesrc":"/bundles/cards/05031.png","url":"https://marvelcdb.com/card/05031","deck_count":26,"frequency":0.1688},{"code":"01065","name":"Heroic Intuition","type_code":"upgrade","faction_code":"justice","cost":2,"text":"Play under any player's control. Max 1 per player.\nYour hero gets +1 THW.","traits":"Skill.","imagesrc":"/bundles/cards/01065.png","url":"https://marvelcdb.com/card/01065","deck_count":26,"frequency":0.1688},{"code":"01082","name":"Indomitable","type_code":"upgrade","faction_code":"protection","cost":1,"text":"<b>Response</b>: After your hero defends, discard indomitable → ready your hero.","traits":"Condition.","imagesrc":"/bundles/cards/01082.png","url":"https://marvelcdb.com/card/01082","deck_count":26,"frequency":0.1688},{"code":"03034","name":"Enhanced Awareness","type_code":"upgrade","faction_code":"basic","cost":2,"text":"Uses (3 mental counters).\n<b>Hero Resource</b>: Exhaust Enhanced Awareness and remove 1 mental counter from it → generate a [mental] resource.","traits":"Condition.","imagesrc":"/bundles/cards/03034.png","url":"https://marvelcdb.com/card/03034","deck_count":25,"frequency":0.1623},{"code":"01077","name":"Counter-Punch","type_code":"event","faction_code":"protection","cost":0,"text":"<b>Response</b> <i>(attack)</i>: After your hero defends against an enemy attack, deal damage to that enemy equal to your hero's ATK.","traits":"Attack.","imagesrc":"/bundles/cards/01077.png","url":"https://marvelcdb.com/card/01077","deck_count":24,"frequency":0.1558},{"code":"01056","name":"Tac Team","type_code":"support","faction_code":"aggression","cost":3,"text":"Uses (3 attack counters). <i>(Enters play with 3 counters. When those are gone, discard this card)</i>\n<b>Action</b>: Exhaust Tac Team and remove 1 attack counter from it → deal 2 damage to an enemy.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01056.png","url":"https://marvelcdb.com/card/01056","deck_count":23,"frequency":0.1494},{"code":"06034","name":"Enhanced Physique","type_code":"upgrade","faction_code":"basic","cost":2,"text":"Uses (3 physical counters).\n<b>Hero Resource</b>: Exhaust Enhanced Physique and remove 1 physical counter from it → generate a [physical] resource.","traits":"Condition.","imagesrc":"/bundles/cards/06034.png","url":"https://marvelcdb.com/card/06034","deck_count":22,"frequency":0.1429},{"code":"03032","name":"Followed","type_code":"upgrade","faction_code":"justice","cost":1,"text":"Attach to a side scheme. Max 1 per scheme.\n<b>Interrupt</b>: When attached scheme is defeated, deal 4 damage to an enemy.","traits":"","imagesrc":"/bundles/cards/03032.png","url":"https://marvelcdb.com/card/03032","deck_count":21,"frequency":0.1364},{"code":"01078","name":"Get Behind Me!","type_code":"event","faction_code":"protection","cost":1,"text":"<b>Hero Interrupt</b>: When a treachery card is revealed from the encounter deck, cancel its \"<b>When Revealed</b>\" effects. The villain attacks you instead.","traits":"","imagesrc":"/bundles/cards/01078.png","url":"https://marvelcdb.com/card/01078","deck_count":21,"frequency":0.1364},{"code":"01079","name":"The Power of Protection","type_code":"resource","faction_code":"protection","cost":null,"text":"Max 2 per deck.\nDouble the number of resources this card generates while paying for a Protection <i>(green)</i> card.","traits":"","imagesrc":"/bundles/cards/01079.png","url":"https://marvelcdb.com/card/01079","deck_count":21,"frequency":0.1364},{"code":"01076","name":"Luke Cage","type_code":"ally","faction_code":"protection","cost":4,"text":"Toughness. <i>(This character enters play with a tough status card.)</i>","traits":"Defender.","imagesrc":"/bundles/cards/01076.png","url":"https://marvelcdb.com/card/01076","deck_count":19,"frequency":0.1234},{"code":"01080","name":"Med Team","type_code":"support","faction_code":"protection","cost":3,"text":"Uses (3 medical counters). <i>(Enters play with 3 counters. When those are gone, discard this card.)</i>\n<b>Action</b>: Exhaust Med Team and remove 1 medical counter from it → heal 2 damage from a friendly character.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01080.png","url":"https://marvelcdb.com/card/01080","deck_count":19,"frequency":0.1234},{"code":"01072","name":"The Power of Leadership","type_code":"resource","faction_code":"leadership","cost":null,"text":"Max 2 per deck.\nDouble the number of resources this card generates while paying for a Leadership <i>(blue)</i> card.","traits":"","imagesrc":"/bundles/cards/01072.png","url":"https://marvelcdb.com/card/01072","deck_count":19,"frequency":0.1234},{"code":"01075","name":"Black Widow","type_code":"ally","faction_code":"protection","cost":3,"text":"<b>Interrupt</b>: When a card is revealed from the encounter deck, exhaust Black Widow and spend a [mental] resource → cancel the effects of that card and discard it. Then, reveal another card from the encounter deck.","traits":"S.H.I.E.L.D. Spy.","imagesrc":"/bundles/cards/01075.png","url":"https://marvelcdb.com/card/01075","deck_count":18,"frequency":0.1169},{"code":"01066","name":"Hawkeye","type_code":"ally","faction_code":"leadership","cost":3,"text":"Hawkeye enters play with 4 arrow counters on him.\n<b>Response</b>: After a minion enters play, remove 1 arrow counter from Hawkeye → deal 2 damage to that minion.","traits":"Avenger.","imagesrc":"/bundles/cards/01066.png","url":"https://marvelcdb.com/card/01066","deck_count":18,"frequency":0.1169},{"code":"06031","name":"Under Surveillance","type_code":"upgrade","faction_code":"justice","cost":2,"text":"Attach to the main scheme. Max 1 per scheme.\nIncrease the target threat value of attached scheme by 4.","traits":"Condition.","imagesrc":"/bundles/cards/06031.png","url":"https://marvelcdb.com/card/06031","deck_count":18,"frequency":0.1169},{"code":"08023","name":"Quincarrier","type_code":"support","faction_code":"basic","cost":3,"text":"Play only if your identity has the [[Avenger]] trait.\n<b>Resource</b>: Exhaust Quincarrier → generate a [wild] resource.","traits":"Avenger. Vehicle.","imagesrc":"/bundles/cards/08023.png","url":"https://marvelcdb.com/card/08023","deck_count":16,"frequency":0.1039},{"code":"01068","name":"Vision","type_code":"ally","faction_code":"leadership","cost":4,"text":"<b>Action</b>: Spend a [energy] resource → choose THW or ATK. Until the end of the phase, Vision gets +2 to the chosen power. (Limit once per round.)","traits":"Android. Avenger.","imagesrc":"/bundles/cards/01068.png","url":"https://marvelcdb.com/card/01068","deck_count":16,"frequency":0.1039},{"code":"06019","name":"Jarnbjorn","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Restricted.\n<b>Response:</b> After your hero attacks an enemy, spend a [physical] resource → deal 2 damage to an enemy.","traits":"Asgard. Weapon.","imagesrc":"/bundles/cards/06019.png","url":"https://marvelcdb.com/card/06019","deck_count":15,"frequency":0.0974},{"code":"03013","name":"Squirrel Girl","type_code":"ally","faction_code":"leadership","cost":2,"text":"<b>Response</b>: After Squirrel Girl enters play, deal 1 damage to each enemy.","traits":"Avenger.","imagesrc":"/bundles/cards/03013.png","url":"https://marvelcdb.com/card/03013","deck_count":15,"frequency":0.0974},{"code":"03014","name":"Wonder Man","type_code":"ally","faction_code":"leadership","cost":2,"text":"[star] As an additional cost for Wonder Man to attack, you must discard 1 card from your hand.","traits":"Avenger.","imagesrc":"/bundles/cards/03014.png","url":"https://marvelcdb.com/card/03014","deck_count":15,"frequency":0.0974},{"code":"03024","name":"Avengers Tower","type_code":"support","faction_code":"basic","cost":2,"text":"If each of your allies has the [[Avenger]] trait, increase your ally limit by 1.\n<b>Action:</b> Exhaust Avengers Tower → reduce the cost of the next [[Avenger]] ally played this phase by 1.","traits":"Avenger. Location.","imagesrc":"/bundles/cards/03024.png","url":"https://marvelcdb.com/card/03024","deck_count":14,"frequency":0.0909},{"code":"03011","name":"Falcon","type_code":"ally","faction_code":"leadership","cost":4,"text":"<b>Response</b>: After Falcon enters play, look at the top 3 cards of the encounter deck. For each treachery looked at this way, remove 1 threat from a scheme.","traits":"Aerial. Avenger.","imagesrc":"/bundles/cards/03011.png","url":"https://marvelcdb.com/card/03011","deck_count":14,"frequency":0.0909},{"code":"06017","name":"Hall of Heroes","type_code":"support","faction_code":"aggression","cost":2,"text":"<b>Response:</b> After you defeat a minion, place 1 glory counter here.\n<b>Alter-Ego Action:</b> Exhaust Hall of Heroes and remove 3 glory counters from it → draw 3 cards.","traits":"Asgard. Location.","imagesrc":"/bundles/cards/06017.png","url":"https://marvelcdb.com/card/06017","deck_count":13,"frequency":0.0844},{"code":"01070","name":"Lead from the Front","type_code":"event","faction_code":"leadership","cost":2,"text":"<b>Hero Action</b>: Choose a player. Each character that player controls gets +1 THW and +1 ATK until the end of the phase.","traits":"Tactic.","imagesrc":"/bundles/cards/01070.png","url":"https://marvelcdb.com/card/01070","deck_count":13,"frequency":0.0844},{"code":"01071","name":"Make the Call","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Action</b>: Pay the printed cost of an ally in any player's discard pile → put that ally into play under your control.","traits":"","imagesrc":"/bundles/cards/01071.png","url":"https://marvelcdb.com/card/01071","deck_count":13,"frequency":0.0844},{"code":"03019","name":"Quinjet","type_code":"support","faction_code":"leadership","cost":1,"text":"<b>Response:</b> After your turn begins, place 1 time counter on Quinjet.\n<b>Action:</b> Put an [[Avenger]] ally from your hand into play with printed cost equal to or less than the number of time counters on Quinjet. Then, discard Quinjet.","traits":"Avenger. Vehicle.","imagesrc":"/bundles/cards/03019.png","url":"https://marvelcdb.com/card/03019","deck_count":13,"frequency":0.0844},{"code":"06018","name":"Battle Fury","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Play under any player's control.\nMax 1 per player.\n<b>Response:</b> After your hero attacks and defeats a minion, deal 1 damage to your hero and discard Battle Fury → ready your hero.","traits":"Condition.","imagesrc":"/bundles/cards/06018.png","url":"https://marvelcdb.com/card/06018","deck_count":12,"frequency":0.0779},{"code":"05017","name":"Energy Barrier","type_code":"upgrade","faction_code":"protection","cost":2,"text":"Uses (3 reflection counters). <b>Interrupt:</b> When you would take any amount of damage, remove 1 reflection counter from here → prevent 1 of that damage and deal 1 damage to an enemy.","traits":"Item. Tech.","imagesrc":"/bundles/cards/05017.png","url":"https://marvelcdb.com/card/05017","deck_count":12,"frequency":0.0779},{"code":"01067","name":"Maria Hill","type_code":"ally","faction_code":"leadership","cost":2,"text":"<b>Response</b>: After Maria Hill enters play, each player draws 1 card.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01067.png","url":"https://marvelcdb.com/card/01067","deck_count":12,"frequency":0.0779},{"code":"06015","name":"Mean Swing","type_code":"event","faction_code":"aggression","cost":0,"text":"<b>Hero Interrupt</b>: When your hero makes a basic attack, exhaust a [[Weapon]] upgrade on your hero → your hero gets +3 ATK for this attack.","traits":"Skill.","imagesrc":"/bundles/cards/06015.png","url":"https://marvelcdb.com/card/06015","deck_count":12,"frequency":0.0779},{"code":"03017","name":"Strength In Numbers","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Action</b>: Exhaust any number of allies you control → draw 1 card for each ally exhausted this way.","traits":"","imagesrc":"/bundles/cards/03017.png","url":"https://marvelcdb.com/card/03017","deck_count":12,"frequency":0.0779},{"code":"01073","name":"The Triskelion","type_code":"support","faction_code":"leadership","cost":1,"text":"Increase your ally limit by 1. <i>(This allows you to control more than 3 allies.)</i>","traits":"Location. S.H.I.E.L.D.","imagesrc":"/bundles/cards/01073.png","url":"https://marvelcdb.com/card/01073","deck_count":12,"frequency":0.0779},{"code":"06021","name":"Invulnerability","type_code":"event","faction_code":"basic","cost":3,"text":"<b>Hero Action</b>: Give your hero a tough status card.","traits":"Superpower.","imagesrc":"/bundles/cards/06021.png","url":"https://marvelcdb.com/card/06021","deck_count":11,"frequency":0.0714},{"code":"05014","name":"Preemptive Strike","type_code":"event","faction_code":"protection","cost":1,"text":"<b>Hero Interrupt</b> <i>(defense)</i>: When a boost card is turned face up while the villain attacks, cancel all boost icons ([boost]) on that card. Then deal 1 damage to the villain for each boost icon cancelled this way.","traits":"Defense.","imagesrc":"/bundles/cards/05014.png","url":"https://marvelcdb.com/card/05014","deck_count":11,"frequency":0.0714},{"code":"06012","name":"Valkyrie","type_code":"ally","faction_code":"aggression","cost":3,"text":"<b>Response:</b> After Valkyrie enters play, deal 2 damage to a minion (3 damage instead if you paid for this card using a [energy] resource).","traits":"Asgard. Avenger.","imagesrc":"/bundles/cards/06012.png","url":"https://marvelcdb.com/card/06012","deck_count":11,"frequency":0.0714},{"code":"05015","name":"Tackle","type_code":"event","faction_code":"protection","cost":3,"text":"<b>Hero Action</b> <i>(attack)</i>: Stun an enemy. If you paid for this card using a [physical] resource, deal 3 damage to that enemy.","traits":"Attack.","imagesrc":"/bundles/cards/05015.png","url":"https://marvelcdb.com/card/05015","deck_count":10,"frequency":0.0649},{"code":"05030","name":"Melee","type_code":"event","faction_code":"aggression","cost":3,"text":"<b>Hero Action</b> <i>(attack)</i>: Deal 3 damage to an enemy. Deal 3 damage to another enemy.","traits":"Attack.","imagesrc":"/bundles/cards/05030.png","url":"https://marvelcdb.com/card/05030","deck_count":9,"frequency":0.0584},{"code":"08030","name":"Counterattack","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Max 1 per player.\n<b>Hero Response</b> <i>(attack)</i>: After you take damage from an enemy attack, discard Counterattack → deal an equal amount of damage to that enemy.","traits":"Preparation. Tactic.","imagesrc":"/bundles/cards/08030.png","url":"https://marvelcdb.com/card/08030","deck_count":8,"frequency":0.0519},{"code":"01069","name":"Get Ready","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Action</b>: Ready an ally.","traits":"","imagesrc":"/bundles/cards/01069.png","url":"https://marvelcdb.com/card/01069","deck_count":8,"frequency":0.0519},{"code":"03025","name":"Honorary Avenger","type_code":"upgrade","faction_code":"basic","cost":0,"text":"Play only if your identity has the [[Avenger]] trait.\nMax 1 per character.\nAttach to a friendly character.\nAttached character gets +1 hit point and gains the [[Avenger]] trait.","traits":"Title.","imagesrc":"/bundles/cards/03025.png","url":"https://marvelcdb.com/card/03025","deck_count":8,"frequency":0.0519},{"code":"05012","name":"Nova","type_code":"ally","faction_code":"protection","cost":4,"text":"<b>Interrupt</b>: When an enemy initiates an attack against you, spend a [energy] resource → deal 2 damage to that enemy.","traits":"Champion.","imagesrc":"/bundles/cards/05012.png","url":"https://marvelcdb.com/card/05012","deck_count":8,"frequency":0.0519},{"code":"03015","name":"Avengers Assemble!","type_code":"event","faction_code":"leadership","cost":4,"text":"Max 1 per round.\n<b>Hero Action</b></i>: Ready each [[Avenger]] character you control. Until the end of the phase, each [[Avenger]] character in play gets +1 THW and +1 ATK.","traits":"","imagesrc":"/bundles/cards/03015.png","url":"https://marvelcdb.com/card/03015","deck_count":7,"frequency":0.0455},{"code":"01074","name":"Inspired","type_code":"upgrade","faction_code":"leadership","cost":1,"text":"Attach to an ally. Max 1 per ally.\nAttached ally gets +1 THW and +1 ATK.","traits":"Condition.","imagesrc":"/bundles/cards/01074.png","url":"https://marvelcdb.com/card/01074","deck_count":7,"frequency":0.0455},{"code":"05018","name":"Lockjaw","type_code":"ally","faction_code":"basic","cost":4,"text":"You may play Lockjaw from your discard pile during your turn (paying his resource cost).","traits":"Inhuman.","imagesrc":"/bundles/cards/05018.png","url":"https://marvelcdb.com/card/05018","deck_count":7,"frequency":0.0455},{"code":"05024","name":"Enhanced Reflexes","type_code":"upgrade","faction_code":"basic","cost":2,"text":"Uses (3 energy counters). <b>Hero Resource:</b> Exhaust Enhanced Reflexes and remove 1 energy counter from it → generate a [energy] resource.","traits":"Condition.","imagesrc":"/bundles/cards/05024.png","url":"https://marvelcdb.com/card/05024","deck_count":6,"frequency":0.039},{"code":"03031","name":"Enraged","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Attach to an ally. Max 1 per ally.\nAttached ally gets +2 ATK and takes +1 consequential damage after it attacks.","traits":"Condition.","imagesrc":"/bundles/cards/03031.png","url":"https://marvelcdb.com/card/03031","deck_count":6,"frequency":0.039},{"code":"03033","name":"Expert Defense","type_code":"event","faction_code":"protection","cost":0,"text":"<b>Hero Interrupt</b> <i>(defense)</i>: When your hero defends against an attack, it gets +3 DEF for that attack.","traits":"Defense.","imagesrc":"/bundles/cards/03033.png","url":"https://marvelcdb.com/card/03033","deck_count":5,"frequency":0.0325},{"code":"08012","name":"Quake","type_code":"ally","faction_code":"justice","cost":2,"text":"<b>Response</b>: After a minion schemes, exhaust Quake → deal 2 damage to that minion.","traits":"Avenger. S.H.I.E.L.D.","imagesrc":"/bundles/cards/08012.png","url":"https://marvelcdb.com/card/08012","deck_count":5,"frequency":0.0325},{"code":"06033","name":"Second Wind","type_code":"event","faction_code":"protection","cost":3,"text":"<b>Action</b>: Heal 4 damage from an identity (5 damage instead if you paid for this card using a [mental] resource).","traits":"","imagesrc":"/bundles/cards/06033.png","url":"https://marvelcdb.com/card/06033","deck_count":5,"frequency":0.0325},{"code":"08011","name":"Agent Coulson","type_code":"ally","faction_code":"justice","cost":3,"text":"<b>Response</b>: After Agent Coulson enters play, search your deck and discard pile for a [[Preparation]] card and add it to your hand. Shuffle your deck.","traits":"S.H.I.E.L.D. Spy.","imagesrc":"/bundles/cards/08011.png","url":"https://marvelcdb.com/card/08011","deck_count":4,"frequency":0.026},{"code":"08017","name":"Counterintelligence","type_code":"upgrade","faction_code":"justice","cost":2,"text":"Max 1 per player.\n<b>Interrupt</b>: When any amount of threat would be placed on the main scheme, discard Counterintelligence → prevent 3 of that threat.","traits":"Preparation. Skill.","imagesrc":"/bundles/cards/08017.png","url":"https://marvelcdb.com/card/08017","deck_count":4,"frequency":0.026},{"code":"06011","name":"Hercules","type_code":"ally","faction_code":"aggression","cost":6,"text":"Reduce the cost to play Hercules by 1 for each minion engaged with you.","traits":"Avenger. Olympus.","imagesrc":"/bundles/cards/06011.png","url":"https://marvelcdb.com/card/06011","deck_count":4,"frequency":0.026},{"code":"08013","name":"Stealth Strike","type_code":"event","faction_code":"justice","cost":3,"text":"<b>Hero Action</b> <i>(attack)</i>: Deal 4 damage to an enemy. If that enemy is defeated by this attack, remove 2 threat from a scheme.","traits":"Attack.","imagesrc":"/bundles/cards/08013.png","url":"https://marvelcdb.com/card/08013","deck_count":4,"frequency":0.026},{"code":"06014","name":"Get Over Here!","type_code":"event","faction_code":"aggression","cost":0,"text":"<b>Hero Action</b> <i>(attack)</i>: Deal 1 damage to a minion. If you have the [[Aerial]] trait, engage that enemy.","traits":"Attack.","imagesrc":"/bundles/cards/06014.png","url":"https://marvelcdb.com/card/06014","deck_count":3,"frequency":0.0195},{"code":"06020","name":"Heimdall","type_code":"ally","faction_code":"basic","cost":5,"text":"<b>Response:</b> After Heimdall enters play, look at the top 3 cards of the encounter deck. Discard 1 of them and put the others back in any order.","traits":"Asgard.","imagesrc":"/bundles/cards/06020.png","url":"https://marvelcdb.com/card/06020","deck_count":3,"frequency":0.0195},{"code":"08032","name":"Defensive Stance","type_code":"upgrade","faction_code":"protection","cost":2,"text":"Max 1 per player.\n<b>Hero Interrupt</b>: When you would take any amount of damage, discard Defensive Stance → prevent 3 of that damage.","traits":"Preparation. Tactic.","imagesrc":"/bundles/cards/08032.png","url":"https://marvelcdb.com/card/08032","deck_count":2,"frequency":0.013},{"code":"05032","name":"Morale Boost","type_code":"event","faction_code":"leadership","cost":1,"text":"<b>Hero Action</b>: Choose a hero. Until the end of the round, that hero gets +1 THW, +1 ATK, and +1 DEF","traits":"","imagesrc":"/bundles/cards/05032.png","url":"https://marvelcdb.com/card/05032","deck_count":2,"frequency":0.013},{"code":"08031","name":"Rapid Response","type_code":"upgrade","faction_code":"leadership","cost":2,"text":"Max 1 per player.\n<b>Hero Response</b>: After an ally you control is defeated, discard Rapid Response → put that ally into play from your discard pile and deal 1 damage to it.","traits":"Preparation. Tactic.","imagesrc":"/bundles/cards/08031.png","url":"https://marvelcdb.com/card/08031","deck_count":2,"frequency":0.013},{"code":"08018","name":"Spycraft","type_code":"upgrade","faction_code":"justice","cost":1,"text":"Play only if you control a [[Spy]] character.\n<b>Interrupt</b>: When you reveal an encounter card, discard Spycraft → cancel the effects of that card and discard it. Then, reveal another card from the encounter deck.","traits":"Preparation. Skill.","imagesrc":"/bundles/cards/08018.png","url":"https://marvelcdb.com/card/08018","deck_count":2,"frequency":0.013},{"code":"06032","name":"Teamwork","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Hero Interrupt</b> When you use your basic thwart power <i>(THW)</i> or basic attack power <i>(ATK)</i>, exhaust an ally you control → add that ally's matching power to your hero's power for this use.","traits":"Tactic.","imagesrc":"/bundles/cards/06032.png","url":"https://marvelcdb.com/card/06032","deck_count":2,"frequency":0.013}];
+      window.__TOTAL_DECKS__ = 154;
+    </script>
+    <script src="/assets/filter.js"></script>
+  </main>
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>.
+    Updated daily.</p>
+    <p><a href="/en/algorithm/" class="site-footer__algo-link" onclick="document.cookie='lang=en;path=/;max-age=31536000'">How scores work</a></p>
+    <p class="site-footer__build">build #16</p>
+  </footer>
+</body>
+</html>

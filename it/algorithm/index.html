@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Come funziona il punteggio — Marvel Compass</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/it/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">EN</a><a href="/it/algorithm/"
+         class="lang-switch lang-switch--active"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">IT</a><a href="/es/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">ES</a><a href="/fr/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">FR</a><a href="/de/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">DE</a></nav>
+  </header>
+  <main>
+    
+    <div class="algo-page">
+      <a href="/it/" class="back-link">← Tutti gli Eroi</a>
+      <h1 class="algo-page__title">Come funziona il punteggio</h1>
+
+      <p class="algo-page__intro">Ad ogni carta viene assegnato uno <strong>score di affinità</strong> per ciascun eroe — un numero tra 0 e 100 che esprime quanto quella carta sia rilevante nella costruzione dei mazzi attuali per quell'eroe.</p>
+
+      <section class="algo-section">
+        <h2>Il problema della frequenza grezza</h2>
+        <p>Un approccio ingenuo conterebbe in quanti mazzi appare una carta. Ma questo svantaggia le carte più nuove: una carta del Core Set (2019) ha avuto anni per accumulare presenze, mentre una uscita il mese scorso ne ha pochissime. Un semplice conteggio rankerebbe sempre le carte vecchie più in alto, indipendentemente dalla rilevanza nel meta attuale.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Decadimento esponenziale nel tempo</h2>
+        <p>Pesamo ogni mazzo in base a quanto recentemente è stato creato. Un mazzo di oggi conta completamente; uno di 90 giorni fa conta la metà; uno di 180 giorni fa conta un quarto, e così via.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>La formula</h2>
+        <p class="algo-formula__label">Peso di un mazzo:</p>
+        <div class="algo-formula">
+          <code>w(deck) = e<sup>−λ × days_ago</sup></code>
+        </div>
+        <p class="algo-formula__label">Score di affinità di una carta:</p>
+        <div class="algo-formula">
+          <code>score(card) = Σ(card_in_deck × w(deck)) / Σ(w(deck)) × 100</code>
+        </div>
+        <p class="algo-formula__legend">dove <em>λ = ln(2) / 90</em>, quindi un mazzo creato 90 giorni fa ha peso 0.5.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Parametri correnti</h2>
+        <table class="algo-table">
+          <tr>
+            <th>Half-life</th>
+            <td><strong>90 giorni</strong> — Un mazzo creato 90 giorni fa contribuisce la metà rispetto a uno creato oggi.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="algo-section">
+        <p class="algo-note">Il &quot;X / Y mazzi&quot; mostrato sotto ogni score è il conteggio grezzo — quanti mazzi su totale includono la carta, indipendentemente dalla pesatura. Fornisce contesto allo score.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Cosa viene escluso</h2>
+        <p>Le carte identità dell'eroe (le carte specifiche dell'eroe, sempre presenti in ogni mazzo) sono escluse dal ranking, in quanto la loro inclusione è obbligatoria e non porta informazione.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>.
+    Updated daily.</p>
+    <p><a href="/it/algorithm/" class="site-footer__algo-link" onclick="document.cookie='lang=it;path=/;max-age=31536000'">Come funziona il punteggio</a></p>
+    <p class="site-footer__build">build #16</p>
+  </footer>
+</body>
+</html>

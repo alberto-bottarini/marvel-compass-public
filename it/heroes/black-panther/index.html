@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantera Nera — Marvel Compass</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/it/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/heroes/black-panther/"
+         class="lang-switch"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">EN</a><a href="/it/heroes/black-panther/"
+         class="lang-switch lang-switch--active"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">IT</a><a href="/es/heroes/black-panther/"
+         class="lang-switch"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">ES</a><a href="/fr/heroes/black-panther/"
+         class="lang-switch"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">FR</a><a href="/de/heroes/black-panther/"
+         class="lang-switch"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">DE</a></nav>
+  </header>
+  <main>
+    
+    <div class="hero-detail">
+      <div class="hero-detail__header">
+        <img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01040A.jpg" alt="Pantera Nera" class="hero-detail__img" onerror="this.style.display='none'" />
+        <div class="hero-detail__info">
+          <a href="/it/" class="back-link">← Tutti gli Eroi</a>
+          <h1 class="hero-detail__name">Pantera Nera</h1>
+          <div class="hero-detail__stats"><span class="stat"><strong>11</strong> HP</span><span class="stat"><strong>5</strong> Mano</span><span class="stat"><strong>182</strong> Mazzi Analizzati</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="cards-section">
+      <div class="filters" id="filters">
+        <span class="filters__label">Filtra:</span>
+
+        <select id="filter-type" class="filter-select">
+          <option value="">Tutti i Tipi</option>
+          <option value="ally">Alleato</option><option value="event">Evento</option><option value="resource">Risorsa</option><option value="support">Supporto</option><option value="upgrade">Potenziamento</option>
+        </select>
+
+        <select id="filter-faction" class="filter-select">
+          <option value="">Tutti gli Aspetti</option>
+          <option value="aggression">Aggressione</option><option value="basic">Base</option><option value="justice">Giustizia</option><option value="leadership">Comando</option><option value="protection">Protezione</option>
+        </select>
+
+        <select id="filter-cost" class="filter-select">
+          <option value="">Qualsiasi Costo</option>
+          <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>
+        </select>
+
+        <button id="filter-reset" class="filter-reset">Reset</button>
+        <span class="filters__count" id="result-count"></span>
+      </div>
+
+      <div class="card-list" id="card-list">
+        
+  <a href="/it/cards/01088/" class="card-row"
+     data-type="resource"
+     data-faction="basic"
+     data-cost="">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01088.jpg" alt="Energia" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Energia</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Risorsa</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per mazzo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:96%"></div>
+        </div>
+        <span class="freq-label">95.6<span class="freq-label__decks"> · 174/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01090/" class="card-row"
+     data-type="resource"
+     data-faction="basic"
+     data-cost="">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01090.jpg" alt="Forza" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Forza</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Risorsa</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per mazzo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:95%"></div>
+        </div>
+        <span class="freq-label">94.5<span class="freq-label__decks"> · 172/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01089/" class="card-row"
+     data-type="resource"
+     data-faction="basic"
+     data-cost="">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01089.jpg" alt="Genialità" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Genialità</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Risorsa</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per mazzo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:93%"></div>
+        </div>
+        <span class="freq-label">92.9<span class="freq-label__decks"> · 169/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01091/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01091.jpg" alt="Palazzo degli Avengers" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Palazzo degli Avengers</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Azione</b>: Esaurisci Palazzo degli Avengers → scegli 1 giocatore. Quel giocatore pesca 1 carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:84%"></div>
+        </div>
+        <span class="freq-label">83.5<span class="freq-label__decks"> · 152/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01092/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01092.jpg" alt="Eliveivolo" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Eliveivolo</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Azione</b>: Esaurisci Eliveivolo → scegli 1 giocatore. Riduci il costo in risorse della prossima carta che quel giocatore gioca in questa fase.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:77%"></div>
+        </div>
+        <span class="freq-label">77.5<span class="freq-label__decks"> · 141/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01084/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01084.jpg" alt="Nick Fury" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Nick Fury</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta Obbligata</b>: Dopo che Nick Fury è entrato in gioco, scegli 1 effetto tra: rimuovi 2 minacce da una trama; pesca 3 carte; infliggi 4 danni a un nemico. Alla fine del round, se Nick Fury è ancora in gioco, scartalo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:75%"></div>
+        </div>
+        <span class="freq-label">75.3<span class="freq-label__decks"> · 137/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01083/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01083.jpg" alt="Mimo" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Mimo</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che Mimo è entrata in gioco, stordisci 1 nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:73%"></div>
+        </div>
+        <span class="freq-label">73.1<span class="freq-label__decks"> · 133/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01086/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01086.jpg" alt="Pronto Soccorso" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Pronto Soccorso</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione</b>: Cura 2 danni a un personaggio.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:40%"></div>
+        </div>
+        <span class="freq-label">40.1<span class="freq-label__decks"> · 73/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01066/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01066.jpg" alt="Occhio di Falco" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Occhio di Falco</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Occhio di Falco entra in gioco con 4 gettoni freccia.
+<b>Risposta</b>: Dopo che un gregario è entrato in gioco, rimuovi 1 gettone freccia da Occhio di Falco → infliggi 2 danni a quel gregario.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:39%"></div>
+        </div>
+        <span class="freq-label">39.0<span class="freq-label__decks"> · 71/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01067/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01067.jpg" alt="Maria Hill" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Maria Hill</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che Maria Hill è entrata in gioco, ogni giocatore pesca 1 carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:35%"></div>
+        </div>
+        <span class="freq-label">35.2<span class="freq-label__decks"> · 64/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01072/" class="card-row"
+     data-type="resource"
+     data-faction="leadership"
+     data-cost="">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01072.jpg" alt="Potere dell'Autorità" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Potere dell'Autorità</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Risorsa</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 2 per mazzo.
+Mentre paghi per una carta Autorità <i>(blu)</i>, raddoppia il numero di risorse generate da questa carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:35%"></div>
+        </div>
+        <span class="freq-label">35.2<span class="freq-label__decks"> · 64/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01071/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01071.jpg" alt="Segnale di Adunata" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Segnale di Adunata</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione</b>: Paga il costo stampato di 1 alleato nella pila degli scarti di un qualsiasi giocatore → metti in gioco quell'alleato sotto il tuo controllo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:35%"></div>
+        </div>
+        <span class="freq-label">35.2<span class="freq-label__decks"> · 64/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05023/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05023.jpg" alt="Resistenza Fisica" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Resistenza Fisica</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.
+Ricevi +3 punti ferita.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:30%"></div>
+        </div>
+        <span class="freq-label">29.7<span class="freq-label__decks"> · 54/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01068/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01068.jpg" alt="Visione" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Visione</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione</b>: Spendi [energy] → scegli INT o ATT. Fino alla fine della fase, Visione riceve +2 al potere scelto. (Limite di una volta per round.)</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:29%"></div>
+        </div>
+        <span class="freq-label">28.6<span class="freq-label__decks"> · 52/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01069/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01069.jpg" alt="Preparatevi" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Preparatevi</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione</b>: Ripristina un alleato.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:28%"></div>
+        </div>
+        <span class="freq-label">28.0<span class="freq-label__decks"> · 51/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01070/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01070.jpg" alt="Comando in Prima Linea" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Comando in Prima Linea</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b>: Scegli 1 giocatore. Ogni personaggio controllato da quel giocatore riceve +1 INT e + 1 ATT fino alla fine della fase.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:25%"></div>
+        </div>
+        <span class="freq-label">24.7<span class="freq-label__decks"> · 45/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03013/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03013.jpg" alt="Squirrel Girl" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Squirrel Girl</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che Squirrel Girl è entrata in gioco, infliggi 1 danno a ogni nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:25%"></div>
+        </div>
+        <span class="freq-label">24.7<span class="freq-label__decks"> · 45/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01057/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01057.jpg" alt="Arte del Combattimento" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Arte del Combattimento</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.
+Il tuo eroe riceve +1 ATT.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:23%"></div>
+        </div>
+        <span class="freq-label">22.5<span class="freq-label__decks"> · 41/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03011/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03011.jpg" alt="Falcon" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Falcon</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che Falcon è entrato in gioco, guarda 3 carte dalla cima del mazzo incontri. Per ogni insidia guardata in questo modo, rimuovi 1 minaccia da una trama.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:22%"></div>
+        </div>
+        <span class="freq-label">22.0<span class="freq-label__decks"> · 40/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01073/" class="card-row"
+     data-type="support"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01073.jpg" alt="Triskelion" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Triskelion</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Aumenta di 1 il tuo limite di alleati. <i>(Questo ti consente di controllare più di 3 alleati.)</i></p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:21%"></div>
+        </div>
+        <span class="freq-label">21.4<span class="freq-label__decks"> · 39/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01081/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01081.jpg" alt="Giubbotto Corazzato" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Giubbotto Corazzato</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.
+Il tuo eroe riceve + 1 DIF. </p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:21%"></div>
+        </div>
+        <span class="freq-label">20.9<span class="freq-label__decks"> · 38/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03014/" class="card-row"
+     data-type="ally"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03014.jpg" alt="Wonder Man" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Wonder Man</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">[star] Come costo aggiuntivo per attaccare con Wonder Man, devi scartare 1 carta dalla tua mano.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:21%"></div>
+        </div>
+        <span class="freq-label">20.9<span class="freq-label__decks"> · 38/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05033/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05033.jpg" alt="Pausa Pranzo" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Pausa Pranzo</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.
+Il tuo alter ego riceve +2 REC.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:20%"></div>
+        </div>
+        <span class="freq-label">20.3<span class="freq-label__decks"> · 37/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01055/" class="card-row"
+     data-type="resource"
+     data-faction="aggression"
+     data-cost="">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01055.jpg" alt="Potere dell'Offensiva" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Potere dell'Offensiva</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Risorsa</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 2 per mazzo.
+Mentre paghi per una carta Offensiva <i>(rossa)</i>, raddoppia il numero di risorse generate da questa carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:20%"></div>
+        </div>
+        <span class="freq-label">20.3<span class="freq-label__decks"> · 37/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01079/" class="card-row"
+     data-type="resource"
+     data-faction="protection"
+     data-cost="">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01079.jpg" alt="Potere della Protezione" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Potere della Protezione</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Risorsa</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 2 per mazzo.
+Mentre paghi per una carta Protezione <i>(verde)</i>, raddoppia il numero di risorse generate da questa carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:20%"></div>
+        </div>
+        <span class="freq-label">20.3<span class="freq-label__decks"> · 37/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01085/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01085.jpg" alt="Emergenza" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Emergenza</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione</b> (<i>intervento</i>): Quando il criminale trama, riduci di 1 l'ammontare di minacce collocate sulla trama.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:19%"></div>
+        </div>
+        <span class="freq-label">19.2<span class="freq-label__decks"> · 35/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01050/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01050.jpg" alt="Hulk" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Hulk</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta Obbligata</b>: Dopo che Hulk ha attaccato, scarta 1 carta dalla cima del tuo mazzo. Se quella carta possiede come risorse stampate:
+[physical] - Infliggi 2 danni al nemico.
+[energy] - Ingliggi 1 danno a ogni personaggio.
+[mental] - Scarta Hulk.
+[wild] - Tutti gli effetti soprastanti.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:19%"></div>
+        </div>
+        <span class="freq-label">18.7<span class="freq-label__decks"> · 34/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06015/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06015.jpg" alt="Impatto Micidiale" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Impatto Micidiale</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione Eroe</b>: Quando il tuo eroe effettua un attacco base, esaurisci 1 miglioria [[Arma]] sul tuo eroe → il tuo eroe riceve +3 ATT per questo attacco.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:19%"></div>
+        </div>
+        <span class="freq-label">18.7<span class="freq-label__decks"> · 34/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01082/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01082.jpg" alt="Indomito" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Indomito</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che il tuo eroe ha difeso, scarta Indomito → ripristina il tuo eroe.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:19%"></div>
+        </div>
+        <span class="freq-label">18.7<span class="freq-label__decks"> · 34/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05018/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05018.jpg" alt="Lockjaw" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Lockjaw</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Puoi giocare Lockjaw dalla tua pila degli scarti (pagando il suo costo in risorse).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:19%"></div>
+        </div>
+        <span class="freq-label">18.7<span class="freq-label__decks"> · 34/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01074/" class="card-row"
+     data-type="upgrade"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01074.jpg" alt="Ispirato" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Ispirato</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Assegna Ispirato a un alleato. Massimo 1 per alleato.
+L'alleato con questa miglioria riceve +1 INT e +1 ATT.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:18%"></div>
+        </div>
+        <span class="freq-label">18.1<span class="freq-label__decks"> · 33/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01080/" class="card-row"
+     data-type="support"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01080.jpg" alt="Squadra Medica" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Squadra Medica</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni medico). <i>(Entra in gioco con 3 gettoni. Quando finiscono, scarta questa carta.)</i>
+<b>Azione</b>: Esaurisci Squadra Medica e rimuovi 1 gettone medico da essa → cura 2 danni a un personaggio amico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:18%"></div>
+        </div>
+        <span class="freq-label">18.1<span class="freq-label__decks"> · 33/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03025/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03025.jpg" alt="Avenger Onorario" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Avenger Onorario</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca solo se la tua identità possiede il tratto [[Avenger]].
+Assegna a un personaggio amico.
+Il personaggio con questa miglioria riceve +1 punti ferita e ottiene il tratto [[Avenger]].</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:18%"></div>
+        </div>
+        <span class="freq-label">17.6<span class="freq-label__decks"> · 32/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06019/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06019.jpg" alt="Jarnbjorn" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Jarnbjorn</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Restrizione. (Massimo 2 carte con Restrizione per giocatore.)
+<b>Risposta:</b> Dopo che il tuo eroe ha attaccato un nemico, spendi [physical] → infliggi 2 danni a un nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:18%"></div>
+        </div>
+        <span class="freq-label">17.6<span class="freq-label__decks"> · 32/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03017/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03017.jpg" alt="L'Unione Fa la Forza" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">L'Unione Fa la Forza</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione</b>: Esaurisci un qualsiasi numero di alleati che controlli → pesca 1 carta per ogni alleato esaurito in questo modo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:18%"></div>
+        </div>
+        <span class="freq-label">17.6<span class="freq-label__decks"> · 32/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01087/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01087.jpg" alt="Pugno Feroce" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Pugno Feroce</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> (<i>attacco</i>): Infliggi 3 danni a un nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:18%"></div>
+        </div>
+        <span class="freq-label">17.6<span class="freq-label__decks"> · 32/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01076/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01076.jpg" alt="Luke Cage" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Luke Cage</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Robustezza. <i>(Questo personaggio entra in gioco con 1 carta status Robusto.)</i></p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:17%"></div>
+        </div>
+        <span class="freq-label">17.0<span class="freq-label__decks"> · 31/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01052/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01052.jpg" alt="Inseguiteli" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Inseguiteli</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b> (<i>intervento</i>): Dopo che il tuo eroe ha attaccato e sconfitto un nemico, rimuovi 2 minacce da una trama.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:16%"></div>
+        </div>
+        <span class="freq-label">16.5<span class="freq-label__decks"> · 30/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01075/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01075.jpg" alt="Vedova Nera" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Vedova Nera</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione</b>: Quando viene rivelata una carta dal mazzo degli incontri, esaurisci Vedova Nera e spendi [mental] → annulla gli effetti di quella carta e scartala, poi rivela 1 altra carta dal mazzo degli incontri.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:16%"></div>
+        </div>
+        <span class="freq-label">16.5<span class="freq-label__decks"> · 30/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01051/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01051.jpg" alt="Tigra" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Tigra</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che Tigra ha attaccato e sconfitto un gregario, cura 1 danno a Tigra.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:15%"></div>
+        </div>
+        <span class="freq-label">15.4<span class="freq-label__decks"> · 28/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06034/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06034.jpg" alt="Fisico Potenziato" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Fisico Potenziato</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni fisico).
+<b>Risorsa Eroe</b>: Esaurisci Fisico Potenziato e rimuovi 1 gettone fisico da esso → genera [physical].</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:15%"></div>
+        </div>
+        <span class="freq-label">14.8<span class="freq-label__decks"> · 27/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03024/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03024.jpg" alt="Torre degli Avengers" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Torre degli Avengers</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Se ogni tuo alleato possiede il tratto [[Avenger]], aumenta di 1 il tuo limite di alleati.
+<b>Azione:</b> Esaurisci Torre degli Avengers → riduci di 1 il costo del successivo alleato [[Avenger]] giocato in questa fase.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">14.3<span class="freq-label__decks"> · 26/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03015/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03015.jpg" alt="Avengers Uniti!" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Avengers Uniti!</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per round.
+<b>Azione Eroe</b></i>: Ripristina ogni personaggio [[Avenger]] che controlli. Fino alla fine della fase, ogni personaggio [[Avenger]] in gioco riceve +1 INT e +1 ATT.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">13.7<span class="freq-label__decks"> · 25/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01054/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01054.jpg" alt="Montante" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Montante</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> (<i>attacco</i>): Infliggi 5 danni a un nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">13.7<span class="freq-label__decks"> · 25/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06017/" class="card-row"
+     data-type="support"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06017.jpg" alt="Sala degli Eroi" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Sala degli Eroi</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta:</b> Dopo che hai sconfitto un gregario, colloca 1 gettone gloria su questa carta.
+<b>Azione Alter Ego:</b> Esaurisci Sala degli Eroi e rimuovi 3 gettoni gloria da essa → pesca 3 carte.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:14%"></div>
+        </div>
+        <span class="freq-label">13.7<span class="freq-label__decks"> · 25/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05017/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05017.jpg" alt="Barriera di Energia" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Barriera di Energia</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni riflesso). <b>Interruzione:</b> Quando stai per subire un qualsiasi ammontare di danni, rimuovi 1 gettone riflesso da questa carta → previeni 1 di quei danni e infliggi 1 danno a un nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:13%"></div>
+        </div>
+        <span class="freq-label">13.2<span class="freq-label__decks"> · 24/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01077/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01077.jpg" alt="Pugno di Reazione" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Pugno di Reazione</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b> (<i>attacco</i>): Dopo che il tuo eroe ha difeso da un attacco nemico, infliggi a quel nemico un ammontare di danni pari all'ATT del tuo eroe.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:13%"></div>
+        </div>
+        <span class="freq-label">13.2<span class="freq-label__decks"> · 24/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05024/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05024.jpg" alt="Riflessi Potenziati" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Riflessi Potenziati</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni energia). <b>Risorsa Eroe:</b> Esaurisci Riflessi Potenziati e rimuovi 1 gettone energia da essi → genera [energy] .</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:13%"></div>
+        </div>
+        <span class="freq-label">13.2<span class="freq-label__decks"> · 24/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01093/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01093.jpg" alt="Tenacia" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Tenacia</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b>: Spendi [physical] e scarta questa carta → ripristina il tuo eroe.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:13%"></div>
+        </div>
+        <span class="freq-label">13.2<span class="freq-label__decks"> · 24/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01053/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01053.jpg" alt="Assalto Implacabile" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Assalto Implacabile</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> (<i>attacco</i>): Infliggi 5 danni a un gregario. Se hai pagato questa carta usando  [physical], questo attacco ottiene Sopraffazione. (I danni in eccesso di questo attacco sono inflitti al <i>criminale</i>.)</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:13%"></div>
+        </div>
+        <span class="freq-label">12.6<span class="freq-label__decks"> · 23/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03019/" class="card-row"
+     data-type="support"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03019.jpg" alt="Quinjet" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Quinjet</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta:</b> Dopo che il tuo turno è iniziato, colloca 1 gettone tempo su Quinjet.
+<b>Azione:</b> Metti in gioco dalla tua mano 1 alleato [[Avenger]] dal costo stampato pari o inferiore al numero di gettoni tempo su Quinjet. Poi scarta questa carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:13%"></div>
+        </div>
+        <span class="freq-label">12.6<span class="freq-label__decks"> · 23/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06012/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06012.jpg" alt="Valchiria" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Valchiria</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta:</b> Dopo che Valchiria è entrata in gioco, infliggi 2 danni a un gregario (3 danni se invece hai pagato questa carta usando una [energy]).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">12.1<span class="freq-label__decks"> · 22/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01078/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01078.jpg" alt="Dietro di Me!" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Dietro di Me!</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione Eroe</b>: Quando viene rivelata una carta insidia dal mazzo degli incontri, annulla i suoi effetti "<b>Quando Rivelata</b>". Invece, il criminale ti attacca.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:12%"></div>
+        </div>
+        <span class="freq-label">11.5<span class="freq-label__decks"> · 21/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05012/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05012.jpg" alt="Nova" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Nova</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione</b>: Quando un nemico lancia un attacco contro di te, spendi [energy] → infliggi 2 danni a quel nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:10%"></div>
+        </div>
+        <span class="freq-label">10.4<span class="freq-label__decks"> · 19/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08023/" class="card-row"
+     data-type="support"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08023.jpg" alt="Quincarrier" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Quincarrier</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca solo se la tua identità possiede il tratto [[Avenger]].
+<b>Risorsa</b>: Esaurisci Quincarrier → genera 1 [wild].</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:10%"></div>
+        </div>
+        <span class="freq-label">10.4<span class="freq-label__decks"> · 19/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01058/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01058.jpg" alt="Daredevil" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Daredevil</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che Daredevil è intervenuto, infliggi 1 danno a un nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:9%"></div>
+        </div>
+        <span class="freq-label">8.8<span class="freq-label__decks"> · 16/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01056/" class="card-row"
+     data-type="support"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01056.jpg" alt="Squadra Tattica" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Squadra Tattica</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni attacco). <i>(Entra in gioco con 3 gettoni. Quando finiscono, scarta questa carta.)</i>
+<b>Azione</b>: Esaurisci Squadra Tattica e rimuovi 1 gettone da essa → infliggi 2 danni a un nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:9%"></div>
+        </div>
+        <span class="freq-label">8.8<span class="freq-label__decks"> · 16/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01065/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01065.jpg" alt="Intuizione Eroica" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Intuizione Eroica</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.
+Il tuo eroe riceve +1 INT.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">8.2<span class="freq-label__decks"> · 15/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01060/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01060.jpg" alt="Per la Giustizia!" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Per la Giustizia!</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> (<i>interveento</i>): rimuovi 3 minacce da una trama (rimuovi invece 4 minacce se hai pagato questa carta usando una [mental]).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">8.2<span class="freq-label__decks"> · 15/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01062/" class="card-row"
+     data-type="resource"
+     data-faction="justice"
+     data-cost="">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01062.jpg" alt="Potere della Giustizia" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Potere della Giustizia</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-resource">Risorsa</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 2 per mazzo.
+Mentre paghi per una carta Giustizia <i>(gialla)</i>, raddoppia il numero di risorse generate da questa carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">8.2<span class="freq-label__decks"> · 15/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06011/" class="card-row"
+     data-type="ally"
+     data-faction="aggression"
+     data-cost="6">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06011.jpg" alt="Ercole" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Ercole</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">6</span>
+        </div>
+      </div>
+      <p class="card-row__text">Riduci il costo per giocare Ercole di 1 per ogni gregario impegnato con te.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.7<span class="freq-label__decks"> · 14/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01059/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01059.jpg" alt="Jessica Jones" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Jessica Jones</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text">Jessica Jones riceve +1 INT per ogni trama secondaria in gioco.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:8%"></div>
+        </div>
+        <span class="freq-label">7.7<span class="freq-label__decks"> · 14/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05030/" class="card-row"
+     data-type="event"
+     data-faction="aggression"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05030.jpg" alt="Mischia" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Mischia</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> <i>(attacco)</i>: Infliggi 3 danni a un nemico. Infliggi 3 danni a un altro nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:7%"></div>
+        </div>
+        <span class="freq-label">7.1<span class="freq-label__decks"> · 13/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01064/" class="card-row"
+     data-type="support"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01064.jpg" alt="Squadra di Sorveglianza" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Squadra di Sorveglianza</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni pedinamento). <i>(Entra in gioco con 3 gettoni. Quando finiscono, scarta questa carta)</i>
+<b>Azione</b>: Esaurisci Squadra di Sorveglianza e rimuovi 1 gettone pedinamento da essa → rimuovi 1 minaccia da una trama.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:7%"></div>
+        </div>
+        <span class="freq-label">6.6<span class="freq-label__decks"> · 12/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06018/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06018.jpg" alt="Furia della Battaglia" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Furia della Battaglia</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca sotto il controllo di un qualsiasi giocatore.
+Massimo 1 per giocatore.
+<b>Risposta:</b> Dopo che il tuo eroe ha attaccato e sconfitto un gregario, infliggi 1 danno al tuo eroe e scarta Furia della Battaglia → ripristina il tuo eroe.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:6%"></div>
+        </div>
+        <span class="freq-label">6.0<span class="freq-label__decks"> · 11/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06020/" class="card-row"
+     data-type="ally"
+     data-faction="basic"
+     data-cost="5">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06020.jpg" alt="Heimdall" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Heimdall</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">5</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta:</b> Dopo che Heimdall è entrato in gioco, guarda 3 carte dalla cima del mazzo degli incontri. Scartane 1 e rimetti le altre in cima al mazzo nell'ordine che preferisci.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:6%"></div>
+        </div>
+        <span class="freq-label">6.0<span class="freq-label__decks"> · 11/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01063/" class="card-row"
+     data-type="support"
+     data-faction="justice"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01063.jpg" alt="Sala Interrogatori" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Sala Interrogatori</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Risposta</b>: Dopo che hai sconfitto un gregario, esaurisci Sala Interrogatori → rimuovi 1 minaccia da una trama.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:6%"></div>
+        </div>
+        <span class="freq-label">6.0<span class="freq-label__decks"> · 11/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05014/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05014.jpg" alt="Colpo Preventivo" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Colpo Preventivo</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione Eroe</b> <i>(difesa)</i>: Quando una carta potenziamento viene girata a faccia in su mentre il criminale attacca, annulla tutte le icone potenziamento ([boost]) su quella carta. Poi infliggi 1 danno al criminale per ogni icona potenziamento annullata in questo modo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.5<span class="freq-label__decks"> · 10/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05015/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05015.jpg" alt="Placcaggio" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Placcaggio</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> <i>(attacco)</i>: Stordisci 1 nemico. Se hai pagato questa carta usando una [physical], infliggi 3 danni a quel nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.5<span class="freq-label__decks"> · 10/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05031/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05031.jpg" alt="Colpo Traumatico" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Colpo Traumatico</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> <i>(attacco)</i>: Confondi 1 nemico. Se hai pagato questa carta usando una [physical], infliggi 3 danni a quel nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.0<span class="freq-label__decks"> · 9/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06021/" class="card-row"
+     data-type="event"
+     data-faction="basic"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06021.jpg" alt="Invulnerabilità" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Invulnerabilità</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b>: Irrobustisci il tuo eroe.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:5%"></div>
+        </div>
+        <span class="freq-label">5.0<span class="freq-label__decks"> · 9/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03034/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03034.jpg" alt="Consapevolezza Potenziata" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Consapevolezza Potenziata</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni mente).
+<b>Risorsa Eroe</b>: Esaurisci Consapevolezza Potenziata e rimuovi 1 gettone mente da essa → genera [mental].</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:4%"></div>
+        </div>
+        <span class="freq-label">4.4<span class="freq-label__decks"> · 8/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08031/" class="card-row"
+     data-type="upgrade"
+     data-faction="leadership"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08031.jpg" alt="Risposta Rapida" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Risposta Rapida</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Risposta Eroe</b>: Dopo che un alleato che controlli è stato sconfitto, scarta Risposta rapida → metti in gioco quell'alleato dalla tua pila degli scarti e infliggigli 1 danno.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:4%"></div>
+        </div>
+        <span class="freq-label">4.4<span class="freq-label__decks"> · 8/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06032/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06032.jpg" alt="Lavoro di Squadra" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Lavoro di Squadra</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione Eroe</b> Quando usi il tuo potere di intervento base <i>(INT)</i> o il tuo potere di attacco base <i>(ATT)</i>, esaurisci 1 alleato che controlli → aggiungi il suo potere corrispondente al potere del tuo eroe per questo uso.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:4%"></div>
+        </div>
+        <span class="freq-label">3.9<span class="freq-label__decks"> · 7/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03032/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03032.jpg" alt="Pedinato" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Pedinato</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Assegna a una trama secondaria. Massimo 1 per trama.
+<b>Risposta</b>: Quando la trama con questa miglioria è sconfitta, infliggi 4 danni a un nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:4%"></div>
+        </div>
+        <span class="freq-label">3.9<span class="freq-label__decks"> · 7/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06031/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06031.jpg" alt="Sotto Sorveglianza" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Sotto Sorveglianza</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Assegna alla trama principale. Massimo 1 per trama.
+Aumenta di 4 il valore di minaccia bersaglio della trama con questa miglioria.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:4%"></div>
+        </div>
+        <span class="freq-label">3.9<span class="freq-label__decks"> · 7/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03033/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03033.jpg" alt="Difesa Esperta" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Difesa Esperta</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione Eroe</b> <i>(difesa)</i>: Quando il tuo eroe difende da un attacco, riceve +3 DIF per quell'attacco.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">3.3<span class="freq-label__decks"> · 6/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/01061/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="0">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/01061.jpg" alt="Grandi Responsabilità" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Grandi Responsabilità</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">0</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione Eroe</b>: Quando un qualsiasi ammontare di minacce sta per essere collocato su una trama, subisci invece un pari ammontare di danni.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">3.3<span class="freq-label__decks"> · 6/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08030/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08030.jpg" alt="Contrattacco" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Contrattacco</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Risposta Eroe</b> <i>(attacco)</i>: Dopo che hai subito danni da un attacco nemico, scarta Contrattacco → infliggi un pari ammontare di danni a quel nemico.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">2.8<span class="freq-label__decks"> · 5/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/03031/" class="card-row"
+     data-type="upgrade"
+     data-faction="aggression"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/03031.jpg" alt="Infuriato" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Infuriato</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-aggression">Aggressione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Assegna a un alleato. Massimo 1 per alleato.
+L'alleato con questa miglioria riceve +2 ATT e subisce +1 danno conseguente dopo che ha attaccato.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:3%"></div>
+        </div>
+        <span class="freq-label">2.8<span class="freq-label__decks"> · 5/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08024/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08024.jpg" alt="Bersaglio acquisito" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Bersaglio acquisito</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Risposta Eroe</b>: Dopo che una carta potenziamento è stata girata a faccia in su, scarta Bersaglio acquisito → annulla la capacità di potenziamento di quella carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">2.2<span class="freq-label__decks"> · 4/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/05032/" class="card-row"
+     data-type="event"
+     data-faction="leadership"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/05032.jpg" alt="Incentivo al Morale" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Incentivo al Morale</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-leadership">Comando</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b>: Scegli 1 eroe. Fino alla fine del round, quell'eroe ottiene +1 INT, +1 ATT, e +1 DIF.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">2.2<span class="freq-label__decks"> · 4/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08032/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08032.jpg" alt="Postazione Difensiva" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Postazione Difensiva</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Interruzione Eroe</b>: Quando stai per subire un qualsiasi ammontare di danni, scarta Postazione Difensiva → previeni 3 di quei danni.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">2.2<span class="freq-label__decks"> · 4/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/06033/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/06033.jpg" alt="Recuperare le Forze" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Recuperare le Forze</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione</b>: Cura 4 danni a un'identità (5 danni se invece hai pagato questa carta usando una [mental]).</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">2.2<span class="freq-label__decks"> · 4/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08013/" class="card-row"
+     data-type="event"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08013.jpg" alt="Colpo Furtivo" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Colpo Furtivo</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Azione Eroe</b> <i>(attacco)</i>: Infliggi 4 danni a un nemico. Se quel nemico è sconfitto da questo attacco, rimuovi 2 minacce da una trama.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">1.7<span class="freq-label__decks"> · 3/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08017/" class="card-row"
+     data-type="upgrade"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08017.jpg" alt="Controspionaggio" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Controspionaggio</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text">Massimo 1 per giocatore.
+<b>Interruzione</b>: Quando un qualsiasi ammontare di minacce sta per essere collocato sulla trama principale, scarta Controspionaggio → previeni 3 di quelle minacce.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">1.7<span class="freq-label__decks"> · 3/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/09020/" class="card-row"
+     data-type="upgrade"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/09020.jpg" alt="Imperturbabile" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Imperturbabile</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.
+<b>Risposta</b>: Dopo che hai difeso da un attacco e non hai subito danni, esaurisci Imperturbabile → pesca 1 carta.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">1.7<span class="freq-label__decks"> · 3/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/09014/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="4">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/09014.jpg" alt="Iron Fist" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Iron Fist</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">4</span>
+        </div>
+      </div>
+      <p class="card-row__text">Iron First entra in gioco con 2 gettoni mistico su di esso.
+<b>Interruzione</b>: Quando Iron Fist attacca un nemico, rimuovi 1 gettone mistico da esso → stordisci quel nemico e infliggigli 1 danno.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:2%"></div>
+        </div>
+        <span class="freq-label">1.7<span class="freq-label__decks"> · 3/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08011/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08011.jpg" alt="Agente Coulson" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Agente Coulson</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che agente Coulson è entrato in gioco, cerca nel tuo mazzo e nella pila degli scarti1 carta [[Preparativi]] e aggiungila alla tua mano. Mescola il tuo mazzo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.1<span class="freq-label__decks"> · 2/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/09015/" class="card-row"
+     data-type="event"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/09015.jpg" alt="Difesa Disperata" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Difesa Disperata</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-event">Evento</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione Eroe</b> <i>(difesa)</i>: Quando il tuo eroe difende da un attacco, riceve +2 DIF per quell'attacco. Se non subisci danni danni da quell'attacco, ripristina il tuo eroe.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.1<span class="freq-label__decks"> · 2/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08012/" class="card-row"
+     data-type="ally"
+     data-faction="justice"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08012.jpg" alt="Quake" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Quake</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-justice">Giustizia</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che un gregario ha tramato, esaurisci Quake → infliggi 2 danni a quel gregario.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.1<span class="freq-label__decks"> · 2/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/08033/" class="card-row"
+     data-type="upgrade"
+     data-faction="basic"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/08033.jpg" alt="Spionaggio" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Spionaggio</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-upgrade">Potenziamento</span>
+          <span class="badge badge--faction badge--faction-basic">Base</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Gioca solo se controlli personaggi [[Spia]].
+<b>Interruzione</b>: Quando la parola chiave Impulso su una carta incontro sta per essere risolta, scarta Spionaggio → pesca 2 carte.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">1.1<span class="freq-label__decks"> · 2/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/09013/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="2">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/09013.jpg" alt="Clea" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Clea</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">2</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Interruzione</b>: Quando Clea è sconfitta, rimescolala nel mazzo del suo proprietario.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">0.5<span class="freq-label__decks"> · 1/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/09012/" class="card-row"
+     data-type="ally"
+     data-faction="protection"
+     data-cost="3">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/09012.jpg" alt="Fratello Voodoo" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Fratello Voodoo</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-ally">Alleato</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">3</span>
+        </div>
+      </div>
+      <p class="card-row__text"><b>Risposta</b>: Dopo che Fratello Voodoo è entrato in gioco, cerca nelle 5 carte in cima al tuo mazzo 1 carta evento e aggiungila alla tua mano. Mescola il tuo mazzo.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">0.5<span class="freq-label__decks"> · 1/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/it/cards/09019/" class="card-row"
+     data-type="support"
+     data-faction="protection"
+     data-cost="1">
+    <div class="card-row__art"><img src="https://carte-marvel-championslcg.s3.eu-north-1.amazonaws.com/official/09019.jpg" alt="Infermiera di Notte" class="card-row__img" loading="lazy" onerror="this.style.display='none'" /></div>
+    <div class="card-row__main">
+      <div class="card-row__top">
+        <span class="card-row__name">Infermiera di Notte</span>
+        <div class="card-row__badges">
+          <span class="badge badge--type badge--type-support">Supporto</span>
+          <span class="badge badge--faction badge--faction-protection">Protezione</span>
+          <span class="badge badge--cost">1</span>
+        </div>
+      </div>
+      <p class="card-row__text">Utilizzo (3 gettoni medico).
+<b>Azione</b>: Esaurisci Infermiera di Notte e rimuovi 1 gettone medico da essa → cura 1 danno a un eroe e scarta 1 carta status da esso.</p>
+      <div class="card-row__freq">
+        <div class="freq-bar">
+          <div class="freq-bar__fill" style="width:1%"></div>
+        </div>
+        <span class="freq-label">0.5<span class="freq-label__decks"> · 1/182 mazzi</span></span>
+      </div>
+    </div>
+  </a>
+      </div>
+    </section>
+
+    <script>
+      window.__HERO_CARDS__ = [{"code":"01088","name":"Energia","type_code":"resource","faction_code":"basic","cost":null,"text":"Massimo 1 per mazzo.","traits":"","imagesrc":"/bundles/cards/01088.png","url":"https://it.marvelcdb.com/card/01088","deck_count":174,"frequency":0.956},{"code":"01090","name":"Forza","type_code":"resource","faction_code":"basic","cost":null,"text":"Massimo 1 per mazzo.","traits":"","imagesrc":"/bundles/cards/01090.png","url":"https://it.marvelcdb.com/card/01090","deck_count":172,"frequency":0.9451},{"code":"01089","name":"Genialità","type_code":"resource","faction_code":"basic","cost":null,"text":"Massimo 1 per mazzo.","traits":"","imagesrc":"/bundles/cards/01089.png","url":"https://it.marvelcdb.com/card/01089","deck_count":169,"frequency":0.9286},{"code":"01091","name":"Palazzo degli Avengers","type_code":"support","faction_code":"basic","cost":4,"text":"Massimo 1 per giocatore.\n<b>Azione</b>: Esaurisci Palazzo degli Avengers → scegli 1 giocatore. Quel giocatore pesca 1 carta.","traits":"Avenger. Luogo.","imagesrc":"/bundles/cards/01091.png","url":"https://it.marvelcdb.com/card/01091","deck_count":152,"frequency":0.8352},{"code":"01092","name":"Eliveivolo","type_code":"support","faction_code":"basic","cost":3,"text":"Massimo 1 per giocatore.\n<b>Azione</b>: Esaurisci Eliveivolo → scegli 1 giocatore. Riduci il costo in risorse della prossima carta che quel giocatore gioca in questa fase.","traits":"Luogo. S.H.I.E.L.D.","imagesrc":"/bundles/cards/01092.png","url":"https://it.marvelcdb.com/card/01092","deck_count":141,"frequency":0.7747},{"code":"01084","name":"Nick Fury","type_code":"ally","faction_code":"basic","cost":4,"text":"<b>Risposta Obbligata</b>: Dopo che Nick Fury è entrato in gioco, scegli 1 effetto tra: rimuovi 2 minacce da una trama; pesca 3 carte; infliggi 4 danni a un nemico. Alla fine del round, se Nick Fury è ancora in gioco, scartalo.","traits":"S.H.I.E.L.D. Spia.","imagesrc":"/bundles/cards/01084.png","url":"https://it.marvelcdb.com/card/01084","deck_count":137,"frequency":0.7527},{"code":"01083","name":"Mimo","type_code":"ally","faction_code":"basic","cost":3,"text":"<b>Risposta</b>: Dopo che Mimo è entrata in gioco, stordisci 1 nemico.","traits":"S.H.I.E.L.D. Spia.","imagesrc":"/bundles/cards/01083.png","url":"https://it.marvelcdb.com/card/01083","deck_count":133,"frequency":0.7308},{"code":"01086","name":"Pronto Soccorso","type_code":"event","faction_code":"basic","cost":1,"text":"<b>Azione</b>: Cura 2 danni a un personaggio.","traits":"","imagesrc":"/bundles/cards/01086.png","url":"https://it.marvelcdb.com/card/01086","deck_count":73,"frequency":0.4011},{"code":"01066","name":"Occhio di Falco","type_code":"ally","faction_code":"leadership","cost":3,"text":"Occhio di Falco entra in gioco con 4 gettoni freccia.\n<b>Risposta</b>: Dopo che un gregario è entrato in gioco, rimuovi 1 gettone freccia da Occhio di Falco → infliggi 2 danni a quel gregario.","traits":"Avenger.","imagesrc":"/bundles/cards/01066.png","url":"https://it.marvelcdb.com/card/01066","deck_count":71,"frequency":0.3901},{"code":"01067","name":"Maria Hill","type_code":"ally","faction_code":"leadership","cost":2,"text":"<b>Risposta</b>: Dopo che Maria Hill è entrata in gioco, ogni giocatore pesca 1 carta.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01067.png","url":"https://it.marvelcdb.com/card/01067","deck_count":64,"frequency":0.3516},{"code":"01072","name":"Potere dell'Autorità","type_code":"resource","faction_code":"leadership","cost":null,"text":"Massimo 2 per mazzo.\nMentre paghi per una carta Autorità <i>(blu)</i>, raddoppia il numero di risorse generate da questa carta.","traits":"","imagesrc":"/bundles/cards/01072.png","url":"https://it.marvelcdb.com/card/01072","deck_count":64,"frequency":0.3516},{"code":"01071","name":"Segnale di Adunata","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Azione</b>: Paga il costo stampato di 1 alleato nella pila degli scarti di un qualsiasi giocatore → metti in gioco quell'alleato sotto il tuo controllo.","traits":"","imagesrc":"/bundles/cards/01071.png","url":"https://it.marvelcdb.com/card/01071","deck_count":64,"frequency":0.3516},{"code":"05023","name":"Resistenza Fisica","type_code":"upgrade","faction_code":"basic","cost":1,"text":"Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.\nRicevi +3 punti ferita.","traits":"Condizione.","imagesrc":"/bundles/cards/05023.png","url":"https://it.marvelcdb.com/card/05023","deck_count":54,"frequency":0.2967},{"code":"01068","name":"Visione","type_code":"ally","faction_code":"leadership","cost":4,"text":"<b>Azione</b>: Spendi [energy] → scegli INT o ATT. Fino alla fine della fase, Visione riceve +2 al potere scelto. (Limite di una volta per round.)","traits":"Androide. Avenger.","imagesrc":"/bundles/cards/01068.png","url":"https://it.marvelcdb.com/card/01068","deck_count":52,"frequency":0.2857},{"code":"01069","name":"Preparatevi","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Azione</b>: Ripristina un alleato.","traits":"","imagesrc":"/bundles/cards/01069.png","url":"https://it.marvelcdb.com/card/01069","deck_count":51,"frequency":0.2802},{"code":"01070","name":"Comando in Prima Linea","type_code":"event","faction_code":"leadership","cost":2,"text":"<b>Azione Eroe</b>: Scegli 1 giocatore. Ogni personaggio controllato da quel giocatore riceve +1 INT e + 1 ATT fino alla fine della fase.","traits":"Tattica.","imagesrc":"/bundles/cards/01070.png","url":"https://it.marvelcdb.com/card/01070","deck_count":45,"frequency":0.2473},{"code":"03013","name":"Squirrel Girl","type_code":"ally","faction_code":"leadership","cost":2,"text":"<b>Risposta</b>: Dopo che Squirrel Girl è entrata in gioco, infliggi 1 danno a ogni nemico.","traits":"Avenger.","imagesrc":"/bundles/cards/03013.png","url":"https://it.marvelcdb.com/card/03013","deck_count":45,"frequency":0.2473},{"code":"01057","name":"Arte del Combattimento","type_code":"upgrade","faction_code":"aggression","cost":2,"text":"Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.\nIl tuo eroe riceve +1 ATT.","traits":"Abilità.","imagesrc":"/bundles/cards/01057.png","url":"https://it.marvelcdb.com/card/01057","deck_count":41,"frequency":0.2253},{"code":"03011","name":"Falcon","type_code":"ally","faction_code":"leadership","cost":4,"text":"<b>Risposta</b>: Dopo che Falcon è entrato in gioco, guarda 3 carte dalla cima del mazzo incontri. Per ogni insidia guardata in questo modo, rimuovi 1 minaccia da una trama.","traits":"Aereo. Avenger.","imagesrc":"/bundles/cards/03011.png","url":"https://it.marvelcdb.com/card/03011","deck_count":40,"frequency":0.2198},{"code":"01073","name":"Triskelion","type_code":"support","faction_code":"leadership","cost":1,"text":"Aumenta di 1 il tuo limite di alleati. <i>(Questo ti consente di controllare più di 3 alleati.)</i>","traits":"Luogo. S.H.I.E.L.D.","imagesrc":"/bundles/cards/01073.png","url":"https://it.marvelcdb.com/card/01073","deck_count":39,"frequency":0.2143},{"code":"01081","name":"Giubbotto Corazzato","type_code":"upgrade","faction_code":"protection","cost":1,"text":"Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.\nIl tuo eroe riceve + 1 DIF. ","traits":"Armatura.","imagesrc":"/bundles/cards/01081.png","url":"https://it.marvelcdb.com/card/01081","deck_count":38,"frequency":0.2088},{"code":"03014","name":"Wonder Man","type_code":"ally","faction_code":"leadership","cost":2,"text":"[star] Come costo aggiuntivo per attaccare con Wonder Man, devi scartare 1 carta dalla tua mano.","traits":"Avenger.","imagesrc":"/bundles/cards/03014.png","url":"https://it.marvelcdb.com/card/03014","deck_count":38,"frequency":0.2088},{"code":"05033","name":"Pausa Pranzo","type_code":"upgrade","faction_code":"basic","cost":1,"text":"Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.\nIl tuo alter ego riceve +2 REC.","traits":"Condizione.","imagesrc":"/bundles/cards/05033.png","url":"https://it.marvelcdb.com/card/05033","deck_count":37,"frequency":0.2033},{"code":"01055","name":"Potere dell'Offensiva","type_code":"resource","faction_code":"aggression","cost":null,"text":"Massimo 2 per mazzo.\nMentre paghi per una carta Offensiva <i>(rossa)</i>, raddoppia il numero di risorse generate da questa carta.","traits":"","imagesrc":"/bundles/cards/01055.png","url":"https://it.marvelcdb.com/card/01055","deck_count":37,"frequency":0.2033},{"code":"01079","name":"Potere della Protezione","type_code":"resource","faction_code":"protection","cost":null,"text":"Massimo 2 per mazzo.\nMentre paghi per una carta Protezione <i>(verde)</i>, raddoppia il numero di risorse generate da questa carta.","traits":"","imagesrc":"/bundles/cards/01079.png","url":"https://it.marvelcdb.com/card/01079","deck_count":37,"frequency":0.2033},{"code":"01085","name":"Emergenza","type_code":"event","faction_code":"basic","cost":0,"text":"<b>Interruzione</b> (<i>intervento</i>): Quando il criminale trama, riduci di 1 l'ammontare di minacce collocate sulla trama.","traits":"Intervento.","imagesrc":"/bundles/cards/01085.png","url":"https://it.marvelcdb.com/card/01085","deck_count":35,"frequency":0.1923},{"code":"01050","name":"Hulk","type_code":"ally","faction_code":"aggression","cost":2,"text":"<b>Risposta Obbligata</b>: Dopo che Hulk ha attaccato, scarta 1 carta dalla cima del tuo mazzo. Se quella carta possiede come risorse stampate:\n[physical] - Infliggi 2 danni al nemico.\n[energy] - Ingliggi 1 danno a ogni personaggio.\n[mental] - Scarta Hulk.\n[wild] - Tutti gli effetti soprastanti.","traits":"Avenger. Gamma.","imagesrc":"/bundles/cards/01050.png","url":"https://it.marvelcdb.com/card/01050","deck_count":34,"frequency":0.1868},{"code":"06015","name":"Impatto Micidiale","type_code":"event","faction_code":"aggression","cost":0,"text":"<b>Interruzione Eroe</b>: Quando il tuo eroe effettua un attacco base, esaurisci 1 miglioria [[Arma]] sul tuo eroe → il tuo eroe riceve +3 ATT per questo attacco.","traits":"Abilità.","imagesrc":"/bundles/cards/06015.png","url":"https://it.marvelcdb.com/card/06015","deck_count":34,"frequency":0.1868},{"code":"01082","name":"Indomito","type_code":"upgrade","faction_code":"protection","cost":1,"text":"<b>Risposta</b>: Dopo che il tuo eroe ha difeso, scarta Indomito → ripristina il tuo eroe.","traits":"Condizione.","imagesrc":"/bundles/cards/01082.png","url":"https://it.marvelcdb.com/card/01082","deck_count":34,"frequency":0.1868},{"code":"05018","name":"Lockjaw","type_code":"ally","faction_code":"basic","cost":4,"text":"Puoi giocare Lockjaw dalla tua pila degli scarti (pagando il suo costo in risorse).","traits":"Inumano.","imagesrc":"/bundles/cards/05018.png","url":"https://it.marvelcdb.com/card/05018","deck_count":34,"frequency":0.1868},{"code":"01074","name":"Ispirato","type_code":"upgrade","faction_code":"leadership","cost":1,"text":"Assegna Ispirato a un alleato. Massimo 1 per alleato.\nL'alleato con questa miglioria riceve +1 INT e +1 ATT.","traits":"Condizione.","imagesrc":"/bundles/cards/01074.png","url":"https://it.marvelcdb.com/card/01074","deck_count":33,"frequency":0.1813},{"code":"01080","name":"Squadra Medica","type_code":"support","faction_code":"protection","cost":3,"text":"Utilizzo (3 gettoni medico). <i>(Entra in gioco con 3 gettoni. Quando finiscono, scarta questa carta.)</i>\n<b>Azione</b>: Esaurisci Squadra Medica e rimuovi 1 gettone medico da essa → cura 2 danni a un personaggio amico.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01080.png","url":"https://it.marvelcdb.com/card/01080","deck_count":33,"frequency":0.1813},{"code":"03025","name":"Avenger Onorario","type_code":"upgrade","faction_code":"basic","cost":0,"text":"Gioca solo se la tua identità possiede il tratto [[Avenger]].\nAssegna a un personaggio amico.\nIl personaggio con questa miglioria riceve +1 punti ferita e ottiene il tratto [[Avenger]].","traits":"Titolo.","imagesrc":"/bundles/cards/03025.png","url":"https://it.marvelcdb.com/card/03025","deck_count":32,"frequency":0.1758},{"code":"06019","name":"Jarnbjorn","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Restrizione. (Massimo 2 carte con Restrizione per giocatore.)\n<b>Risposta:</b> Dopo che il tuo eroe ha attaccato un nemico, spendi [physical] → infliggi 2 danni a un nemico.","traits":"Arma. Asgard.","imagesrc":"/bundles/cards/06019.png","url":"https://it.marvelcdb.com/card/06019","deck_count":32,"frequency":0.1758},{"code":"03017","name":"L'Unione Fa la Forza","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Azione</b>: Esaurisci un qualsiasi numero di alleati che controlli → pesca 1 carta per ogni alleato esaurito in questo modo.","traits":"","imagesrc":"/bundles/cards/03017.png","url":"https://it.marvelcdb.com/card/03017","deck_count":32,"frequency":0.1758},{"code":"01087","name":"Pugno Feroce","type_code":"event","faction_code":"basic","cost":2,"text":"<b>Azione Eroe</b> (<i>attacco</i>): Infliggi 3 danni a un nemico.","traits":"Attacco.","imagesrc":"/bundles/cards/01087.png","url":"https://it.marvelcdb.com/card/01087","deck_count":32,"frequency":0.1758},{"code":"01076","name":"Luke Cage","type_code":"ally","faction_code":"protection","cost":4,"text":"Robustezza. <i>(Questo personaggio entra in gioco con 1 carta status Robusto.)</i>","traits":"Defender.","imagesrc":"/bundles/cards/01076.png","url":"https://it.marvelcdb.com/card/01076","deck_count":31,"frequency":0.1703},{"code":"01052","name":"Inseguiteli","type_code":"event","faction_code":"aggression","cost":0,"text":"<b>Risposta</b> (<i>intervento</i>): Dopo che il tuo eroe ha attaccato e sconfitto un nemico, rimuovi 2 minacce da una trama.","traits":"Intervento.","imagesrc":"/bundles/cards/01052.png","url":"https://it.marvelcdb.com/card/01052","deck_count":30,"frequency":0.1648},{"code":"01075","name":"Vedova Nera","type_code":"ally","faction_code":"protection","cost":3,"text":"<b>Interruzione</b>: Quando viene rivelata una carta dal mazzo degli incontri, esaurisci Vedova Nera e spendi [mental] → annulla gli effetti di quella carta e scartala, poi rivela 1 altra carta dal mazzo degli incontri.","traits":"S.H.I.E.L.D. Spia.","imagesrc":"/bundles/cards/01075.png","url":"https://it.marvelcdb.com/card/01075","deck_count":30,"frequency":0.1648},{"code":"01051","name":"Tigra","type_code":"ally","faction_code":"aggression","cost":3,"text":"<b>Risposta</b>: Dopo che Tigra ha attaccato e sconfitto un gregario, cura 1 danno a Tigra.","traits":"Avenger.","imagesrc":"/bundles/cards/01051.png","url":"https://it.marvelcdb.com/card/01051","deck_count":28,"frequency":0.1538},{"code":"06034","name":"Fisico Potenziato","type_code":"upgrade","faction_code":"basic","cost":2,"text":"Utilizzo (3 gettoni fisico).\n<b>Risorsa Eroe</b>: Esaurisci Fisico Potenziato e rimuovi 1 gettone fisico da esso → genera [physical].","traits":"Condizione.","imagesrc":"/bundles/cards/06034.png","url":"https://it.marvelcdb.com/card/06034","deck_count":27,"frequency":0.1484},{"code":"03024","name":"Torre degli Avengers","type_code":"support","faction_code":"basic","cost":2,"text":"Se ogni tuo alleato possiede il tratto [[Avenger]], aumenta di 1 il tuo limite di alleati.\n<b>Azione:</b> Esaurisci Torre degli Avengers → riduci di 1 il costo del successivo alleato [[Avenger]] giocato in questa fase.","traits":"Avenger. Luogo.","imagesrc":"/bundles/cards/03024.png","url":"https://it.marvelcdb.com/card/03024","deck_count":26,"frequency":0.1429},{"code":"03015","name":"Avengers Uniti!","type_code":"event","faction_code":"leadership","cost":4,"text":"Massimo 1 per round.\n<b>Azione Eroe</b></i>: Ripristina ogni personaggio [[Avenger]] che controlli. Fino alla fine della fase, ogni personaggio [[Avenger]] in gioco riceve +1 INT e +1 ATT.","traits":"","imagesrc":"/bundles/cards/03015.png","url":"https://it.marvelcdb.com/card/03015","deck_count":25,"frequency":0.1374},{"code":"01054","name":"Montante","type_code":"event","faction_code":"aggression","cost":3,"text":"<b>Azione Eroe</b> (<i>attacco</i>): Infliggi 5 danni a un nemico.","traits":"Attacco.","imagesrc":"/bundles/cards/01054.png","url":"https://it.marvelcdb.com/card/01054","deck_count":25,"frequency":0.1374},{"code":"06017","name":"Sala degli Eroi","type_code":"support","faction_code":"aggression","cost":2,"text":"<b>Risposta:</b> Dopo che hai sconfitto un gregario, colloca 1 gettone gloria su questa carta.\n<b>Azione Alter Ego:</b> Esaurisci Sala degli Eroi e rimuovi 3 gettoni gloria da essa → pesca 3 carte.","traits":"Asgard. Luogo.","imagesrc":"/bundles/cards/06017.png","url":"https://it.marvelcdb.com/card/06017","deck_count":25,"frequency":0.1374},{"code":"05017","name":"Barriera di Energia","type_code":"upgrade","faction_code":"protection","cost":2,"text":"Utilizzo (3 gettoni riflesso). <b>Interruzione:</b> Quando stai per subire un qualsiasi ammontare di danni, rimuovi 1 gettone riflesso da questa carta → previeni 1 di quei danni e infliggi 1 danno a un nemico.","traits":"Oggetto. Tecnologia.","imagesrc":"/bundles/cards/05017.png","url":"https://it.marvelcdb.com/card/05017","deck_count":24,"frequency":0.1319},{"code":"01077","name":"Pugno di Reazione","type_code":"event","faction_code":"protection","cost":0,"text":"<b>Risposta</b> (<i>attacco</i>): Dopo che il tuo eroe ha difeso da un attacco nemico, infliggi a quel nemico un ammontare di danni pari all'ATT del tuo eroe.","traits":"Attacco.","imagesrc":"/bundles/cards/01077.png","url":"https://it.marvelcdb.com/card/01077","deck_count":24,"frequency":0.1319},{"code":"05024","name":"Riflessi Potenziati","type_code":"upgrade","faction_code":"basic","cost":2,"text":"Utilizzo (3 gettoni energia). <b>Risorsa Eroe:</b> Esaurisci Riflessi Potenziati e rimuovi 1 gettone energia da essi → genera [energy] .","traits":"Condizione.","imagesrc":"/bundles/cards/05024.png","url":"https://it.marvelcdb.com/card/05024","deck_count":24,"frequency":0.1319},{"code":"01093","name":"Tenacia","type_code":"upgrade","faction_code":"basic","cost":2,"text":"<b>Azione Eroe</b>: Spendi [physical] e scarta questa carta → ripristina il tuo eroe.","traits":"Condizione.","imagesrc":"/bundles/cards/01093.png","url":"https://it.marvelcdb.com/card/01093","deck_count":24,"frequency":0.1319},{"code":"01053","name":"Assalto Implacabile","type_code":"event","faction_code":"aggression","cost":2,"text":"<b>Azione Eroe</b> (<i>attacco</i>): Infliggi 5 danni a un gregario. Se hai pagato questa carta usando  [physical], questo attacco ottiene Sopraffazione. (I danni in eccesso di questo attacco sono inflitti al <i>criminale</i>.)","traits":"Attacco.","imagesrc":"/bundles/cards/01053.png","url":"https://it.marvelcdb.com/card/01053","deck_count":23,"frequency":0.1264},{"code":"03019","name":"Quinjet","type_code":"support","faction_code":"leadership","cost":1,"text":"<b>Risposta:</b> Dopo che il tuo turno è iniziato, colloca 1 gettone tempo su Quinjet.\n<b>Azione:</b> Metti in gioco dalla tua mano 1 alleato [[Avenger]] dal costo stampato pari o inferiore al numero di gettoni tempo su Quinjet. Poi scarta questa carta.","traits":"Avenger. Veicolo.","imagesrc":"/bundles/cards/03019.png","url":"https://it.marvelcdb.com/card/03019","deck_count":23,"frequency":0.1264},{"code":"06012","name":"Valchiria","type_code":"ally","faction_code":"aggression","cost":3,"text":"<b>Risposta:</b> Dopo che Valchiria è entrata in gioco, infliggi 2 danni a un gregario (3 danni se invece hai pagato questa carta usando una [energy]).","traits":"Asgard. Avenger.","imagesrc":"/bundles/cards/06012.png","url":"https://it.marvelcdb.com/card/06012","deck_count":22,"frequency":0.1209},{"code":"01078","name":"Dietro di Me!","type_code":"event","faction_code":"protection","cost":1,"text":"<b>Interruzione Eroe</b>: Quando viene rivelata una carta insidia dal mazzo degli incontri, annulla i suoi effetti \"<b>Quando Rivelata</b>\". Invece, il criminale ti attacca.","traits":"","imagesrc":"/bundles/cards/01078.png","url":"https://it.marvelcdb.com/card/01078","deck_count":21,"frequency":0.1154},{"code":"05012","name":"Nova","type_code":"ally","faction_code":"protection","cost":4,"text":"<b>Interruzione</b>: Quando un nemico lancia un attacco contro di te, spendi [energy] → infliggi 2 danni a quel nemico.","traits":"Champion.","imagesrc":"/bundles/cards/05012.png","url":"https://it.marvelcdb.com/card/05012","deck_count":19,"frequency":0.1044},{"code":"08023","name":"Quincarrier","type_code":"support","faction_code":"basic","cost":3,"text":"Gioca solo se la tua identità possiede il tratto [[Avenger]].\n<b>Risorsa</b>: Esaurisci Quincarrier → genera 1 [wild].","traits":"Avenger. Veicolo.","imagesrc":"/bundles/cards/08023.png","url":"https://it.marvelcdb.com/card/08023","deck_count":19,"frequency":0.1044},{"code":"01058","name":"Daredevil","type_code":"ally","faction_code":"justice","cost":4,"text":"<b>Risposta</b>: Dopo che Daredevil è intervenuto, infliggi 1 danno a un nemico.","traits":"Defender.","imagesrc":"/bundles/cards/01058.png","url":"https://it.marvelcdb.com/card/01058","deck_count":16,"frequency":0.0879},{"code":"01056","name":"Squadra Tattica","type_code":"support","faction_code":"aggression","cost":3,"text":"Utilizzo (3 gettoni attacco). <i>(Entra in gioco con 3 gettoni. Quando finiscono, scarta questa carta.)</i>\n<b>Azione</b>: Esaurisci Squadra Tattica e rimuovi 1 gettone da essa → infliggi 2 danni a un nemico.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01056.png","url":"https://it.marvelcdb.com/card/01056","deck_count":16,"frequency":0.0879},{"code":"01065","name":"Intuizione Eroica","type_code":"upgrade","faction_code":"justice","cost":2,"text":"Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.\nIl tuo eroe riceve +1 INT.","traits":"Abilità.","imagesrc":"/bundles/cards/01065.png","url":"https://it.marvelcdb.com/card/01065","deck_count":15,"frequency":0.0824},{"code":"01060","name":"Per la Giustizia!","type_code":"event","faction_code":"justice","cost":2,"text":"<b>Azione Eroe</b> (<i>interveento</i>): rimuovi 3 minacce da una trama (rimuovi invece 4 minacce se hai pagato questa carta usando una [mental]).","traits":"Intervento.","imagesrc":"/bundles/cards/01060.png","url":"https://it.marvelcdb.com/card/01060","deck_count":15,"frequency":0.0824},{"code":"01062","name":"Potere della Giustizia","type_code":"resource","faction_code":"justice","cost":null,"text":"Massimo 2 per mazzo.\nMentre paghi per una carta Giustizia <i>(gialla)</i>, raddoppia il numero di risorse generate da questa carta.","traits":"","imagesrc":"/bundles/cards/01062.png","url":"https://it.marvelcdb.com/card/01062","deck_count":15,"frequency":0.0824},{"code":"06011","name":"Ercole","type_code":"ally","faction_code":"aggression","cost":6,"text":"Riduci il costo per giocare Ercole di 1 per ogni gregario impegnato con te.","traits":"Avenger. Olimpo.","imagesrc":"/bundles/cards/06011.png","url":"https://it.marvelcdb.com/card/06011","deck_count":14,"frequency":0.0769},{"code":"01059","name":"Jessica Jones","type_code":"ally","faction_code":"justice","cost":3,"text":"Jessica Jones riceve +1 INT per ogni trama secondaria in gioco.","traits":"Defender.","imagesrc":"/bundles/cards/01059.png","url":"https://it.marvelcdb.com/card/01059","deck_count":14,"frequency":0.0769},{"code":"05030","name":"Mischia","type_code":"event","faction_code":"aggression","cost":3,"text":"<b>Azione Eroe</b> <i>(attacco)</i>: Infliggi 3 danni a un nemico. Infliggi 3 danni a un altro nemico.","traits":"Attacco.","imagesrc":"/bundles/cards/05030.png","url":"https://it.marvelcdb.com/card/05030","deck_count":13,"frequency":0.0714},{"code":"01064","name":"Squadra di Sorveglianza","type_code":"support","faction_code":"justice","cost":2,"text":"Utilizzo (3 gettoni pedinamento). <i>(Entra in gioco con 3 gettoni. Quando finiscono, scarta questa carta)</i>\n<b>Azione</b>: Esaurisci Squadra di Sorveglianza e rimuovi 1 gettone pedinamento da essa → rimuovi 1 minaccia da una trama.","traits":"S.H.I.E.L.D.","imagesrc":"/bundles/cards/01064.png","url":"https://it.marvelcdb.com/card/01064","deck_count":12,"frequency":0.0659},{"code":"06018","name":"Furia della Battaglia","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Gioca sotto il controllo di un qualsiasi giocatore.\nMassimo 1 per giocatore.\n<b>Risposta:</b> Dopo che il tuo eroe ha attaccato e sconfitto un gregario, infliggi 1 danno al tuo eroe e scarta Furia della Battaglia → ripristina il tuo eroe.","traits":"Condizione.","imagesrc":"/bundles/cards/06018.png","url":"https://it.marvelcdb.com/card/06018","deck_count":11,"frequency":0.0604},{"code":"06020","name":"Heimdall","type_code":"ally","faction_code":"basic","cost":5,"text":"<b>Risposta:</b> Dopo che Heimdall è entrato in gioco, guarda 3 carte dalla cima del mazzo degli incontri. Scartane 1 e rimetti le altre in cima al mazzo nell'ordine che preferisci.","traits":"Asgard.","imagesrc":"/bundles/cards/06020.png","url":"https://it.marvelcdb.com/card/06020","deck_count":11,"frequency":0.0604},{"code":"01063","name":"Sala Interrogatori","type_code":"support","faction_code":"justice","cost":1,"text":"Massimo 1 per giocatore.\n<b>Risposta</b>: Dopo che hai sconfitto un gregario, esaurisci Sala Interrogatori → rimuovi 1 minaccia da una trama.","traits":"Luogo.","imagesrc":"/bundles/cards/01063.png","url":"https://it.marvelcdb.com/card/01063","deck_count":11,"frequency":0.0604},{"code":"05014","name":"Colpo Preventivo","type_code":"event","faction_code":"protection","cost":1,"text":"<b>Interruzione Eroe</b> <i>(difesa)</i>: Quando una carta potenziamento viene girata a faccia in su mentre il criminale attacca, annulla tutte le icone potenziamento ([boost]) su quella carta. Poi infliggi 1 danno al criminale per ogni icona potenziamento annullata in questo modo.","traits":"Difesa.","imagesrc":"/bundles/cards/05014.png","url":"https://it.marvelcdb.com/card/05014","deck_count":10,"frequency":0.0549},{"code":"05015","name":"Placcaggio","type_code":"event","faction_code":"protection","cost":3,"text":"<b>Azione Eroe</b> <i>(attacco)</i>: Stordisci 1 nemico. Se hai pagato questa carta usando una [physical], infliggi 3 danni a quel nemico.","traits":"Attacco.","imagesrc":"/bundles/cards/05015.png","url":"https://it.marvelcdb.com/card/05015","deck_count":10,"frequency":0.0549},{"code":"05031","name":"Colpo Traumatico","type_code":"event","faction_code":"justice","cost":3,"text":"<b>Azione Eroe</b> <i>(attacco)</i>: Confondi 1 nemico. Se hai pagato questa carta usando una [physical], infliggi 3 danni a quel nemico.","traits":"Attacco.","imagesrc":"/bundles/cards/05031.png","url":"https://it.marvelcdb.com/card/05031","deck_count":9,"frequency":0.0495},{"code":"06021","name":"Invulnerabilità","type_code":"event","faction_code":"basic","cost":3,"text":"<b>Azione Eroe</b>: Irrobustisci il tuo eroe.","traits":"Superpotere.","imagesrc":"/bundles/cards/06021.png","url":"https://it.marvelcdb.com/card/06021","deck_count":9,"frequency":0.0495},{"code":"03034","name":"Consapevolezza Potenziata","type_code":"upgrade","faction_code":"basic","cost":2,"text":"Utilizzo (3 gettoni mente).\n<b>Risorsa Eroe</b>: Esaurisci Consapevolezza Potenziata e rimuovi 1 gettone mente da essa → genera [mental].","traits":"Condizione.","imagesrc":"/bundles/cards/03034.png","url":"https://it.marvelcdb.com/card/03034","deck_count":8,"frequency":0.044},{"code":"08031","name":"Risposta Rapida","type_code":"upgrade","faction_code":"leadership","cost":2,"text":"Massimo 1 per giocatore.\n<b>Risposta Eroe</b>: Dopo che un alleato che controlli è stato sconfitto, scarta Risposta rapida → metti in gioco quell'alleato dalla tua pila degli scarti e infliggigli 1 danno.","traits":"Preparativi. Tattica.","imagesrc":"/bundles/cards/08031.png","url":"https://it.marvelcdb.com/card/08031","deck_count":8,"frequency":0.044},{"code":"06032","name":"Lavoro di Squadra","type_code":"event","faction_code":"leadership","cost":0,"text":"<b>Interruzione Eroe</b> Quando usi il tuo potere di intervento base <i>(INT)</i> o il tuo potere di attacco base <i>(ATT)</i>, esaurisci 1 alleato che controlli → aggiungi il suo potere corrispondente al potere del tuo eroe per questo uso.","traits":"Tattica.","imagesrc":"/bundles/cards/06032.png","url":"https://it.marvelcdb.com/card/06032","deck_count":7,"frequency":0.0385},{"code":"03032","name":"Pedinato","type_code":"upgrade","faction_code":"justice","cost":1,"text":"Assegna a una trama secondaria. Massimo 1 per trama.\n<b>Risposta</b>: Quando la trama con questa miglioria è sconfitta, infliggi 4 danni a un nemico.","traits":"","imagesrc":"/bundles/cards/03032.png","url":"https://it.marvelcdb.com/card/03032","deck_count":7,"frequency":0.0385},{"code":"06031","name":"Sotto Sorveglianza","type_code":"upgrade","faction_code":"justice","cost":2,"text":"Assegna alla trama principale. Massimo 1 per trama.\nAumenta di 4 il valore di minaccia bersaglio della trama con questa miglioria.","traits":"Condizione.","imagesrc":"/bundles/cards/06031.png","url":"https://it.marvelcdb.com/card/06031","deck_count":7,"frequency":0.0385},{"code":"03033","name":"Difesa Esperta","type_code":"event","faction_code":"protection","cost":0,"text":"<b>Interruzione Eroe</b> <i>(difesa)</i>: Quando il tuo eroe difende da un attacco, riceve +3 DIF per quell'attacco.","traits":"Difesa.","imagesrc":"/bundles/cards/03033.png","url":"https://it.marvelcdb.com/card/03033","deck_count":6,"frequency":0.033},{"code":"01061","name":"Grandi Responsabilità","type_code":"event","faction_code":"justice","cost":0,"text":"<b>Interruzione Eroe</b>: Quando un qualsiasi ammontare di minacce sta per essere collocato su una trama, subisci invece un pari ammontare di danni.","traits":"","imagesrc":"/bundles/cards/01061.png","url":"https://it.marvelcdb.com/card/01061","deck_count":6,"frequency":0.033},{"code":"08030","name":"Contrattacco","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Massimo 1 per giocatore.\n<b>Risposta Eroe</b> <i>(attacco)</i>: Dopo che hai subito danni da un attacco nemico, scarta Contrattacco → infliggi un pari ammontare di danni a quel nemico.","traits":"Preparativi. Tattica.","imagesrc":"/bundles/cards/08030.png","url":"https://it.marvelcdb.com/card/08030","deck_count":5,"frequency":0.0275},{"code":"03031","name":"Infuriato","type_code":"upgrade","faction_code":"aggression","cost":1,"text":"Assegna a un alleato. Massimo 1 per alleato.\nL'alleato con questa miglioria riceve +2 ATT e subisce +1 danno conseguente dopo che ha attaccato.","traits":"Condizione.","imagesrc":"/bundles/cards/03031.png","url":"https://it.marvelcdb.com/card/03031","deck_count":5,"frequency":0.0275},{"code":"08024","name":"Bersaglio acquisito","type_code":"upgrade","faction_code":"basic","cost":1,"text":"Massimo 1 per giocatore.\n<b>Risposta Eroe</b>: Dopo che una carta potenziamento è stata girata a faccia in su, scarta Bersaglio acquisito → annulla la capacità di potenziamento di quella carta.","traits":"Abilità. Preparativi.","imagesrc":"/bundles/cards/08024.png","url":"https://it.marvelcdb.com/card/08024","deck_count":4,"frequency":0.022},{"code":"05032","name":"Incentivo al Morale","type_code":"event","faction_code":"leadership","cost":1,"text":"<b>Azione Eroe</b>: Scegli 1 eroe. Fino alla fine del round, quell'eroe ottiene +1 INT, +1 ATT, e +1 DIF.","traits":"","imagesrc":"/bundles/cards/05032.png","url":"https://it.marvelcdb.com/card/05032","deck_count":4,"frequency":0.022},{"code":"08032","name":"Postazione Difensiva","type_code":"upgrade","faction_code":"protection","cost":2,"text":"Massimo 1 per giocatore.\n<b>Interruzione Eroe</b>: Quando stai per subire un qualsiasi ammontare di danni, scarta Postazione Difensiva → previeni 3 di quei danni.","traits":"Preparativi. Tattica.","imagesrc":"/bundles/cards/08032.png","url":"https://it.marvelcdb.com/card/08032","deck_count":4,"frequency":0.022},{"code":"06033","name":"Recuperare le Forze","type_code":"event","faction_code":"protection","cost":3,"text":"<b>Azione</b>: Cura 4 danni a un'identità (5 danni se invece hai pagato questa carta usando una [mental]).","traits":"","imagesrc":"/bundles/cards/06033.png","url":"https://it.marvelcdb.com/card/06033","deck_count":4,"frequency":0.022},{"code":"08013","name":"Colpo Furtivo","type_code":"event","faction_code":"justice","cost":3,"text":"<b>Azione Eroe</b> <i>(attacco)</i>: Infliggi 4 danni a un nemico. Se quel nemico è sconfitto da questo attacco, rimuovi 2 minacce da una trama.","traits":"Attacco.","imagesrc":"/bundles/cards/08013.png","url":"https://it.marvelcdb.com/card/08013","deck_count":3,"frequency":0.0165},{"code":"08017","name":"Controspionaggio","type_code":"upgrade","faction_code":"justice","cost":2,"text":"Massimo 1 per giocatore.\n<b>Interruzione</b>: Quando un qualsiasi ammontare di minacce sta per essere collocato sulla trama principale, scarta Controspionaggio → previeni 3 di quelle minacce.","traits":"Abilità. Preparativi.","imagesrc":"/bundles/cards/08017.png","url":"https://it.marvelcdb.com/card/08017","deck_count":3,"frequency":0.0165},{"code":"09020","name":"Imperturbabile","type_code":"upgrade","faction_code":"protection","cost":1,"text":"Gioca sotto il controllo di un qualsiasi giocatore. Massimo 1 per giocatore.\n<b>Risposta</b>: Dopo che hai difeso da un attacco e non hai subito danni, esaurisci Imperturbabile → pesca 1 carta.","traits":"Condizione.","imagesrc":"/bundles/cards/09020.png","url":"https://it.marvelcdb.com/card/09020","deck_count":3,"frequency":0.0165},{"code":"09014","name":"Iron Fist","type_code":"ally","faction_code":"protection","cost":4,"text":"Iron First entra in gioco con 2 gettoni mistico su di esso.\n<b>Interruzione</b>: Quando Iron Fist attacca un nemico, rimuovi 1 gettone mistico da esso → stordisci quel nemico e infliggigli 1 danno.","traits":"Defender.","imagesrc":"/bundles/cards/09014.png","url":"https://it.marvelcdb.com/card/09014","deck_count":3,"frequency":0.0165},{"code":"08011","name":"Agente Coulson","type_code":"ally","faction_code":"justice","cost":3,"text":"<b>Risposta</b>: Dopo che agente Coulson è entrato in gioco, cerca nel tuo mazzo e nella pila degli scarti1 carta [[Preparativi]] e aggiungila alla tua mano. Mescola il tuo mazzo.","traits":"S.H.I.E.L.D. Spia.","imagesrc":"/bundles/cards/08011.png","url":"https://it.marvelcdb.com/card/08011","deck_count":2,"frequency":0.011},{"code":"09015","name":"Difesa Disperata","type_code":"event","faction_code":"protection","cost":1,"text":"<b>Interruzione Eroe</b> <i>(difesa)</i>: Quando il tuo eroe difende da un attacco, riceve +2 DIF per quell'attacco. Se non subisci danni danni da quell'attacco, ripristina il tuo eroe.","traits":"Difesa.","imagesrc":"/bundles/cards/09015.png","url":"https://it.marvelcdb.com/card/09015","deck_count":2,"frequency":0.011},{"code":"08012","name":"Quake","type_code":"ally","faction_code":"justice","cost":2,"text":"<b>Risposta</b>: Dopo che un gregario ha tramato, esaurisci Quake → infliggi 2 danni a quel gregario.","traits":"Avenger. S.H.I.E.L.D.","imagesrc":"/bundles/cards/08012.png","url":"https://it.marvelcdb.com/card/08012","deck_count":2,"frequency":0.011},{"code":"08033","name":"Spionaggio","type_code":"upgrade","faction_code":"basic","cost":1,"text":"Gioca solo se controlli personaggi [[Spia]].\n<b>Interruzione</b>: Quando la parola chiave Impulso su una carta incontro sta per essere risolta, scarta Spionaggio → pesca 2 carte.","traits":"Abilità. Preparativi.","imagesrc":"/bundles/cards/08033.png","url":"https://it.marvelcdb.com/card/08033","deck_count":2,"frequency":0.011},{"code":"09013","name":"Clea","type_code":"ally","faction_code":"protection","cost":2,"text":"<b>Interruzione</b>: Quando Clea è sconfitta, rimescolala nel mazzo del suo proprietario.","traits":"Mistico.","imagesrc":"/bundles/cards/09013.png","url":"https://it.marvelcdb.com/card/09013","deck_count":1,"frequency":0.0055},{"code":"09012","name":"Fratello Voodoo","type_code":"ally","faction_code":"protection","cost":3,"text":"<b>Risposta</b>: Dopo che Fratello Voodoo è entrato in gioco, cerca nelle 5 carte in cima al tuo mazzo 1 carta evento e aggiungila alla tua mano. Mescola il tuo mazzo.","traits":"Avenger. Mistico.","imagesrc":"/bundles/cards/09012.png","url":"https://it.marvelcdb.com/card/09012","deck_count":1,"frequency":0.0055},{"code":"09019","name":"Infermiera di Notte","type_code":"support","faction_code":"protection","cost":1,"text":"Utilizzo (3 gettoni medico).\n<b>Azione</b>: Esaurisci Infermiera di Notte e rimuovi 1 gettone medico da essa → cura 1 danno a un eroe e scarta 1 carta status da esso.","traits":"Persona.","imagesrc":"/bundles/cards/09019.png","url":"https://it.marvelcdb.com/card/09019","deck_count":1,"frequency":0.0055}];
+      window.__TOTAL_DECKS__ = 182;
+    </script>
+    <script src="/assets/filter.js"></script>
+  </main>
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>.
+    Updated daily.</p>
+    <p><a href="/it/algorithm/" class="site-footer__algo-link" onclick="document.cookie='lang=it;path=/;max-age=31536000'">Come funziona il punteggio</a></p>
+    <p class="site-footer__build">build #16</p>
+  </footer>
+</body>
+</html>

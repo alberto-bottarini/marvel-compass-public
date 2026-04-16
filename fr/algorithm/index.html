@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comment fonctionnent les scores — Marvel Compass</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/fr/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">EN</a><a href="/it/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">IT</a><a href="/es/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">ES</a><a href="/fr/algorithm/"
+         class="lang-switch lang-switch--active"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">FR</a><a href="/de/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">DE</a></nav>
+  </header>
+  <main>
+    
+    <div class="algo-page">
+      <a href="/fr/" class="back-link">← Tous les Héros</a>
+      <h1 class="algo-page__title">Comment fonctionnent les scores</h1>
+
+      <p class="algo-page__intro">Chaque carte reçoit un <strong>score d'affinité</strong> pour chaque héros — un nombre entre 0 et 100 qui exprime la pertinence de cette carte dans la construction de decks actuels pour ce héros.</p>
+
+      <section class="algo-section">
+        <h2>Le problème de la fréquence brute</h2>
+        <p>Une approche naïve compterait dans quel pourcentage de decks apparaît une carte. Mais cela désavantage les nouvelles cartes : une carte du Core Set (2019) a eu des années pour accumuler des apparitions, tandis qu'une carte sortie le mois dernier en a très peu. Un simple comptage classerait toujours les anciennes cartes plus haut, indépendamment de la pertinence dans le méta actuel.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Décroissance exponentielle dans le temps</h2>
+        <p>Nous pondérons chaque deck selon sa date de création. Un deck d'aujourd'hui compte entièrement ; un deck d'il y a 90 jours compte pour moitié ; un deck d'il y a 180 jours compte pour un quart, et ainsi de suite.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>La formule</h2>
+        <p class="algo-formula__label">Poids d'un deck :</p>
+        <div class="algo-formula">
+          <code>w(deck) = e<sup>−λ × days_ago</sup></code>
+        </div>
+        <p class="algo-formula__label">Score d'affinité d'une carte :</p>
+        <div class="algo-formula">
+          <code>score(card) = Σ(card_in_deck × w(deck)) / Σ(w(deck)) × 100</code>
+        </div>
+        <p class="algo-formula__legend">où <em>λ = ln(2) / 90</em>, donc un deck créé il y a 90 jours a un poids de 0.5.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Paramètres actuels</h2>
+        <table class="algo-table">
+          <tr>
+            <th>Demi-vie</th>
+            <td><strong>90 jours</strong> — Un deck créé il y a 90 jours contribue deux fois moins qu'un deck créé aujourd'hui.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="algo-section">
+        <p class="algo-note">Le &quot;X / Y decks&quot; affiché sous chaque score est le comptage brut — combien de decks sur le total incluent réellement la carte, indépendamment de la pondération. Il donne du contexte au score.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Ce qui est exclu</h2>
+        <p>Les cartes d'identité du héros (les cartes propres au héros, toujours présentes dans chaque deck) sont exclues du classement, car leur inclusion est obligatoire et ne porte aucune information.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>.
+    Updated daily.</p>
+    <p><a href="/fr/algorithm/" class="site-footer__algo-link" onclick="document.cookie='lang=fr;path=/;max-age=31536000'">Comment fonctionnent les scores</a></p>
+    <p class="site-footer__build">build #16</p>
+  </footer>
+</body>
+</html>

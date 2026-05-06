@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Come funziona il punteggio — Marvel Compass</title>
+  <meta name="description" content="Scopri le carte più giocate per ogni eroe, basato sui mazzi della community su MarvelCDB." />
+  <meta property="og:title" content="Come funziona il punteggio — Marvel Compass" />
+  <meta property="og:description" content="Scopri le carte più giocate per ogni eroe, basato sui mazzi della community su MarvelCDB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.marvelcompass.fans/it/algorithm/" />
+  <meta property="og:site_name" content="Marvel Compass" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Come funziona il punteggio — Marvel Compass" />
+  <meta name="twitter:description" content="Scopri le carte più giocate per ogni eroe, basato sui mazzi della community su MarvelCDB." />
+  <link rel="canonical" href="https://www.marvelcompass.fans/it/algorithm/" />
+  <link rel="alternate" hreflang="en" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="alternate" hreflang="it" href="https://www.marvelcompass.fans/it/algorithm/" />
+  <link rel="alternate" hreflang="es" href="https://www.marvelcompass.fans/es/algorithm/" />
+  <link rel="alternate" hreflang="fr" href="https://www.marvelcompass.fans/fr/algorithm/" />
+  <link rel="alternate" hreflang="de" href="https://www.marvelcompass.fans/de/algorithm/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7ETN7R1CB"></script>
+  <script>gtag('js',new Date());gtag('config','G-B7ETN7R1CB');</script>
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/it/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <div class="site-search" id="site-search">
+      <input type="text" id="search-input" class="site-search__input"
+             placeholder="Cerca eroi e carte…"
+             data-no-results="Nessun risultato"
+             autocomplete="off" spellcheck="false" />
+      <div id="search-dropdown" class="site-search__dropdown" hidden></div>
+    </div>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">EN</a><a href="/it/algorithm/"
+         class="lang-switch lang-switch--active"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">IT</a><a href="/es/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">ES</a><a href="/fr/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">FR</a><a href="/de/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">DE</a></nav>
+  </header>
+  <main>
+    
+    <div class="algo-page">
+      <a href="/it/" class="back-link">← Tutti gli Eroi</a>
+      <h1 class="algo-page__title">Come funziona il punteggio</h1>
+
+      <p class="algo-page__intro">Ad ogni carta viene assegnato uno <strong>score di affinità</strong> per ciascun eroe — un numero tra 0 e 100 che esprime quanto quella carta sia rilevante nella costruzione dei mazzi attuali per quell'eroe.</p>
+
+      <section class="algo-section">
+        <h2>Il problema della frequenza grezza</h2>
+        <p>Un approccio ingenuo conterebbe in quanti mazzi appare una carta. Ma questo svantaggia le carte più nuove: una carta del Core Set (2019) ha avuto anni per accumulare presenze, mentre una uscita il mese scorso ne ha pochissime. Un semplice conteggio rankerebbe sempre le carte vecchie più in alto, indipendentemente dalla rilevanza nel meta attuale.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Decadimento esponenziale nel tempo</h2>
+        <p>Pesamo ogni mazzo in base a quanto recentemente è stato creato. Un mazzo di oggi conta completamente; uno di 90 giorni fa conta la metà; uno di 180 giorni fa conta un quarto, e così via.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Fattore di maturità</h2>
+        <p>La recency da sola non basta. Quando esce una nuova espansione, i giocatori inseriscono subito le nuove carte nei mazzi — non necessariamente perché siano fondamentali, ma perché sono nuove. Per contrastare questo &quot;hype da lancio&quot;, applichiamo un fattore di maturità a ogni coppia (mazzo, carta): una carta appena uscita quando il mazzo è stato creato contribuisce meno di una che era nel pool da mesi.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>La formula</h2>
+        <p class="algo-formula__label">Peso di recency di un mazzo:</p>
+        <div class="algo-formula">
+          <code>recency_weight(deck) = e<sup>−λ × days_ago</sup></code>
+        </div>
+        <p class="algo-formula__label">Fattore di maturità di una carta nel mazzo:</p>
+        <div class="algo-formula">
+          <code>maturity_factor(deck, card) = 1 − e<sup>−card_age_at_deck / MATURITY_DAYS</sup></code>
+        </div>
+        <p class="algo-formula__label">Score di affinità di una carta:</p>
+        <div class="algo-formula">
+          <code>score(card) = Σ(in_deck × recency_weight × maturity_factor) / Σ(recency_weight) × 100</code>
+        </div>
+        <p class="algo-formula__legend">dove <em>λ = ln(2) / 90</em> (decadimento recency) e <em>MATURITY_DAYS = 60</em>. <em>card_age_at_deck</em> = giorni tra l'uscita del pack e la creazione del mazzo. Le carte con data di uscita sconosciuta sono trattate come mature.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Parametri correnti</h2>
+        <table class="algo-table">
+          <tr>
+            <th>Half-life di recency</th>
+            <td><strong>90 giorni</strong> — Un mazzo creato 90 giorni fa contribuisce la metà rispetto a uno creato oggi.</td>
+          </tr>
+          <tr>
+            <th>Half-life di maturità</th>
+            <td><strong>60 giorni</strong> — Una carta inclusa in un mazzo 60 giorni dopo l'uscita del pack contribuisce al 63% del suo peso pieno; dopo 180 giorni, al 95%.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="algo-section">
+        <p class="algo-note">Il &quot;X / Y mazzi&quot; mostrato sotto ogni score è il conteggio grezzo — quanti mazzi su totale includono la carta, indipendentemente dalla pesatura. Fornisce contesto allo score.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Cosa viene escluso</h2>
+        <p>Le carte identità dell'eroe e le tre risorse base (Energia, Genialità, Forza) sono escluse dal ranking. La loro presenza in ogni mazzo è obbligatoria e non porta alcuna informazione sulle scelte di costruzione.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>.
+    Updated daily.</p>
+    <p>
+      <a href="/it/top/" class="site-footer__algo-link" onclick="document.cookie='lang=it;path=/;max-age=31536000'">Top 100</a>
+      &nbsp;·&nbsp;
+      <a href="/it/algorithm/" class="site-footer__algo-link" onclick="document.cookie='lang=it;path=/;max-age=31536000'">Come funziona il punteggio</a>
+    </p>
+    <p class="site-footer__legal">Marvel Champions: The Card Game © Fantasy Flight Games / Asmodee. Marvel characters © Marvel. This site is not affiliated with or endorsed by Fantasy Flight Games, Asmodee, or Marvel.</p>
+  </footer>
+  <div id="consent-banner" style="display:none">
+    <p>Usiamo Google Analytics per capire come viene utilizzato questo sito. Nessun dato personale viene raccolto senza il tuo consenso.</p>
+    <div class="consent-banner__actions">
+      <button id="consent-accept" class="consent-btn consent-btn--accept">Accetta</button>
+      <button id="consent-reject" class="consent-btn consent-btn--reject">Rifiuta</button>
+    </div>
+  </div>
+  <script>
+    window.__SEARCH_I18N__ = {
+      hero: "Eroe",
+      aggression: "Aggressione",
+      justice: "Giustizia",
+      leadership: "Autorità",
+      protection: "Protezione",
+      basic: "Base"
+    };
+  </script>
+  <script src="/assets/consent.js"></script>
+  <script src="/assets/search.js"></script>
+</body>
+</html>

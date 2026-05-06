@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wie Scores funktionieren — Marvel Compass</title>
+  <meta name="description" content="Entdecke die am häufigsten gespielten Karten für jeden Helden, basierend auf Community-Decks von MarvelCDB." />
+  <meta property="og:title" content="Wie Scores funktionieren — Marvel Compass" />
+  <meta property="og:description" content="Entdecke die am häufigsten gespielten Karten für jeden Helden, basierend auf Community-Decks von MarvelCDB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.marvelcompass.fans/de/algorithm/" />
+  <meta property="og:site_name" content="Marvel Compass" />
+  <meta property="og:locale" content="de_DE" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Wie Scores funktionieren — Marvel Compass" />
+  <meta name="twitter:description" content="Entdecke die am häufigsten gespielten Karten für jeden Helden, basierend auf Community-Decks von MarvelCDB." />
+  <link rel="canonical" href="https://www.marvelcompass.fans/de/algorithm/" />
+  <link rel="alternate" hreflang="en" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="alternate" hreflang="it" href="https://www.marvelcompass.fans/it/algorithm/" />
+  <link rel="alternate" hreflang="es" href="https://www.marvelcompass.fans/es/algorithm/" />
+  <link rel="alternate" hreflang="fr" href="https://www.marvelcompass.fans/fr/algorithm/" />
+  <link rel="alternate" hreflang="de" href="https://www.marvelcompass.fans/de/algorithm/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7ETN7R1CB"></script>
+  <script>gtag('js',new Date());gtag('config','G-B7ETN7R1CB');</script>
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/de/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <div class="site-search" id="site-search">
+      <input type="text" id="search-input" class="site-search__input"
+             placeholder="Helden und Karten suchen…"
+             data-no-results="Keine Ergebnisse"
+             autocomplete="off" spellcheck="false" />
+      <div id="search-dropdown" class="site-search__dropdown" hidden></div>
+    </div>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">EN</a><a href="/it/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">IT</a><a href="/es/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">ES</a><a href="/fr/algorithm/"
+         class="lang-switch"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">FR</a><a href="/de/algorithm/"
+         class="lang-switch lang-switch--active"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">DE</a></nav>
+  </header>
+  <main>
+    
+    <div class="algo-page">
+      <a href="/de/" class="back-link">← Alle Helden</a>
+      <h1 class="algo-page__title">Wie Scores funktionieren</h1>
+
+      <p class="algo-page__intro">Jeder Karte wird ein <strong>Affinitätsscore</strong> für jeden Helden zugewiesen — eine Zahl zwischen 0 und 100, die ausdrückt, wie relevant diese Karte beim aktuellen Deckbau für diesen Helden ist.</p>
+
+      <section class="algo-section">
+        <h2>Das Problem mit der rohen Häufigkeit</h2>
+        <p>Ein naiver Ansatz würde zählen, in wie vielen Prozent der Decks eine Karte vorkommt. Dies benachteiligt jedoch neuere Karten: Eine Karte aus dem Core Set (2019) hatte Jahre Zeit, Auftritte zu sammeln, während eine letzten Monat erschienene Karte kaum welche hat. Eine einfache Zählung würde alte Karten immer höher einordnen, unabhängig von der aktuellen Meta-Relevanz.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Exponentieller Zeitabfall</h2>
+        <p>Wir gewichten jedes Deck danach, wie kürzlich es erstellt wurde. Ein heutiges Deck zählt vollständig; eines von vor 90 Tagen zählt halb so viel; eines von vor 180 Tagen ein Viertel, und so weiter.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Reifefaktor</h2>
+        <p>Aktualität allein reicht nicht aus. Wenn eine neue Erweiterung erscheint, nehmen Spieler sofort deren Karten in ihre Decks auf — nicht unbedingt weil diese Karten unverzichtbar sind, sondern weil sie neu sind. Um diesen Day-1-Hype zu dämpfen, wenden wir einen Reifefaktor auf jedes (Deck, Karte)-Paar an: Eine Karte, die beim Erstellen des Decks brandneu war, trägt weniger bei als eine, die schon seit Monaten im Pool war.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Die Formel</h2>
+        <p class="algo-formula__label">Aktualitätsgewicht eines Decks:</p>
+        <div class="algo-formula">
+          <code>recency_weight(deck) = e<sup>−λ × days_ago</sup></code>
+        </div>
+        <p class="algo-formula__label">Reifefaktor einer Karte im Deck:</p>
+        <div class="algo-formula">
+          <code>maturity_factor(deck, card) = 1 − e<sup>−card_age_at_deck / MATURITY_DAYS</sup></code>
+        </div>
+        <p class="algo-formula__label">Affinitätsscore einer Karte:</p>
+        <div class="algo-formula">
+          <code>score(card) = Σ(in_deck × recency_weight × maturity_factor) / Σ(recency_weight) × 100</code>
+        </div>
+        <p class="algo-formula__legend">wobei <em>λ = ln(2) / 90</em> (Aktualitätsabfall) und <em>MATURITY_DAYS = 60</em>. <em>card_age_at_deck</em> = Tage zwischen Pack-Erscheinung und Deck-Erstellung. Karten ohne bekanntes Erscheinungsdatum werden als voll reif behandelt.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Aktuelle Parameter</h2>
+        <table class="algo-table">
+          <tr>
+            <th>Aktualitäts-Halbwertszeit</th>
+            <td><strong>90 Tage</strong> — Ein vor 90 Tagen erstelltes Deck trägt halb so viel bei wie ein heute erstelltes.</td>
+          </tr>
+          <tr>
+            <th>Reife-Halbwertszeit</th>
+            <td><strong>60 Tage</strong> — Eine Karte in einem Deck 60 Tage nach Erscheinen ihres Packs trägt 63% ihres vollen Gewichts bei; nach 180 Tagen 95%.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="algo-section">
+        <p class="algo-note">Das &quot;X / Y Decks&quot; unter jedem Score ist die rohe Zählung — wie viele Decks insgesamt die Karte tatsächlich enthalten, unabhängig von der Gewichtung. Es gibt dem Score Kontext.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Was ausgeschlossen wird</h2>
+        <p>Heldenidentitätskarten und die drei Basisressourcen (Energie, Genie, Stärke) sind vom Ranking ausgeschlossen. Ihre Aufnahme in jedes Deck ist verpflichtend und trägt keine Information über Deckbau-Entscheidungen.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>.
+    Updated daily.</p>
+    <p>
+      <a href="/de/top/" class="site-footer__algo-link" onclick="document.cookie='lang=de;path=/;max-age=31536000'">Top 100</a>
+      &nbsp;·&nbsp;
+      <a href="/de/algorithm/" class="site-footer__algo-link" onclick="document.cookie='lang=de;path=/;max-age=31536000'">Wie Scores funktionieren</a>
+    </p>
+    <p class="site-footer__legal">Marvel Champions: The Card Game © Fantasy Flight Games / Asmodee. Marvel characters © Marvel. This site is not affiliated with or endorsed by Fantasy Flight Games, Asmodee, or Marvel.</p>
+  </footer>
+  <div id="consent-banner" style="display:none">
+    <p>Wir verwenden Google Analytics, um zu verstehen, wie diese Website genutzt wird. Ohne Ihre Zustimmung werden keine personenbezogenen Daten erhoben.</p>
+    <div class="consent-banner__actions">
+      <button id="consent-accept" class="consent-btn consent-btn--accept">Akzeptieren</button>
+      <button id="consent-reject" class="consent-btn consent-btn--reject">Ablehnen</button>
+    </div>
+  </div>
+  <script>
+    window.__SEARCH_I18N__ = {
+      hero: "Held",
+      aggression: "Aggression",
+      justice: "Gerechtigkeit",
+      leadership: "Führung",
+      protection: "Schutz",
+      basic: "Basis"
+    };
+  </script>
+  <script src="/assets/consent.js"></script>
+  <script src="/assets/search.js"></script>
+</body>
+</html>

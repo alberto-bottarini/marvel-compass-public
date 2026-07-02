@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo funcionan las puntuaciones — Marvel Compass</title>
+  <meta name="description" content="Descubre las cartas más jugadas para cada héroe, basado en los mazos de la comunidad en MarvelCDB." />
+  <meta property="og:title" content="Cómo funcionan las puntuaciones — Marvel Compass" />
+  <meta property="og:description" content="Descubre las cartas más jugadas para cada héroe, basado en los mazos de la comunidad en MarvelCDB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.marvelcompass.fans/es/como-funciona/" />
+  <meta property="og:site_name" content="Marvel Compass" />
+  <meta property="og:locale" content="es_ES" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Cómo funcionan las puntuaciones — Marvel Compass" />
+  <meta name="twitter:description" content="Descubre las cartas más jugadas para cada héroe, basado en los mazos de la comunidad en MarvelCDB." />
+  <link rel="canonical" href="https://www.marvelcompass.fans/es/como-funciona/" />
+  <link rel="alternate" hreflang="en" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="alternate" hreflang="it" href="https://www.marvelcompass.fans/it/come-funziona/" />
+  <link rel="alternate" hreflang="es" href="https://www.marvelcompass.fans/es/como-funciona/" />
+  <link rel="alternate" hreflang="fr" href="https://www.marvelcompass.fans/fr/comment-ca-marche/" />
+  <link rel="alternate" hreflang="de" href="https://www.marvelcompass.fans/de/wie-es-funktioniert/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/assets/style.css?v=mr36uoll" />
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7ETN7R1CB"></script>
+  <script>gtag('js',new Date());gtag('config','G-B7ETN7R1CB');</script>
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/es/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <div class="site-search" id="site-search">
+      <input type="text" id="search-input" class="site-search__input"
+             placeholder="Buscar héroes y cartas…"
+             data-no-results="Sin resultados"
+             autocomplete="off" spellcheck="false" />
+      <div id="search-dropdown" class="site-search__dropdown" hidden></div>
+    </div>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/algorithm/"
+         class="lang-switch"
+         aria-label="EN"
+         title="EN"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">🇬🇧</a><a href="/it/come-funziona/"
+         class="lang-switch"
+         aria-label="IT"
+         title="IT"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">🇮🇹</a><a href="/es/como-funciona/"
+         class="lang-switch lang-switch--active"
+         aria-label="ES"
+         title="ES"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">🇪🇸</a><a href="/fr/comment-ca-marche/"
+         class="lang-switch"
+         aria-label="FR"
+         title="FR"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">🇫🇷</a><a href="/de/wie-es-funktioniert/"
+         class="lang-switch"
+         aria-label="DE"
+         title="DE"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">🇩🇪</a></nav>
+  </header>
+  <nav class="site-nav" aria-label="Explore">
+    <a href="/es/top/" class="site-nav__link" onclick="document.cookie='lang=es;path=/;max-age=31536000'">Top 100</a>
+    <a href="/es/peores/" class="site-nav__link" onclick="document.cookie='lang=es;path=/;max-age=31536000'">Menos Jugadas</a>
+    <a href="/es/estabilidad/" class="site-nav__link" onclick="document.cookie='lang=es;path=/;max-age=31536000'">Estabilidad</a>
+    <a href="/es/como-funciona/" class="site-nav__link site-nav__link--active" onclick="document.cookie='lang=es;path=/;max-age=31536000'">Cómo Funciona</a>
+  </nav>
+  <main>
+    
+    <div class="algo-page">
+      <a href="/es/" class="back-link">← Todos los Héroes</a>
+      <h1 class="algo-page__title">Cómo funcionan las puntuaciones</h1>
+
+      <p class="algo-page__intro">A cada carta se le asigna una <strong>puntuación de afinidad</strong> para cada héroe — un número entre 0 y 100 que expresa cuán relevante es esa carta en la construcción de mazos actuales para ese héroe.</p>
+
+      <section class="algo-section">
+        <h2>El problema de la frecuencia bruta</h2>
+        <p>Un enfoque ingenuo contaría en qué porcentaje de mazos aparece una carta. Pero esto perjudica a las cartas más nuevas: una carta del Core Set (2019) ha tenido años para acumular apariciones, mientras que una carta lanzada el mes pasado tiene muy pocas. Un simple recuento siempre clasificaría las cartas antiguas más arriba, independientemente de la relevancia en el meta actual.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Decaimiento exponencial en el tiempo</h2>
+        <p>Ponderamos cada mazo según cuán recientemente fue creado. Un mazo de hoy cuenta completamente; uno de hace 90 días cuenta la mitad; uno de hace 180 días cuenta un cuarto, y así sucesivamente.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Factor de madurez</h2>
+        <p>La recencia sola no es suficiente. Cuando se lanza una nueva expansión, los jugadores incluyen inmediatamente sus cartas en los mazos — no necesariamente porque sean imprescindibles, sino porque son nuevas. Para contrarrestar este hype del día 1, aplicamos un factor de madurez a cada par (mazo, carta): una carta que era completamente nueva cuando se construyó el mazo contribuye menos que una que llevaba meses en el pool.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>La fórmula</h2>
+        <p class="algo-formula__label">Peso de recencia de un mazo:</p>
+        <div class="algo-formula">
+          <code>recency_weight(deck) = e<sup>−λ × days_ago</sup></code>
+        </div>
+        <p class="algo-formula__label">Factor de madurez de una carta en el mazo:</p>
+        <div class="algo-formula">
+          <code>maturity_factor(deck, card) = 1 − e<sup>−card_age_at_deck / MATURITY_DAYS</sup></code>
+        </div>
+        <p class="algo-formula__label">Puntuación de afinidad de una carta:</p>
+        <div class="algo-formula">
+          <code>score(card) = Σ(in_deck × recency_weight × maturity_factor) / Σ(recency_weight) × 100</code>
+        </div>
+        <p class="algo-formula__legend">donde <em>λ = ln(2) / 90</em> (decaimiento de recencia) y <em>MATURITY_DAYS = 60</em>. <em>card_age_at_deck</em> = días entre el lanzamiento del pack y la creación del mazo. Las cartas con fecha de lanzamiento desconocida se tratan como maduras.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Parámetros actuales</h2>
+        <table class="algo-table">
+          <tr>
+            <th>Vida media de recencia</th>
+            <td><strong>90 días</strong> — Un mazo creado hace 90 días contribuye la mitad que uno creado hoy.</td>
+          </tr>
+          <tr>
+            <th>Vida media de madurez</th>
+            <td><strong>60 días</strong> — Una carta en un mazo 60 días después del lanzamiento de su pack contribuye al 63% de su peso total; después de 180 días, al 95%.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="algo-section">
+        <p class="algo-note">El &quot;X / Y mazos&quot; que se muestra debajo de cada puntuación es el recuento bruto — cuántos mazos del total incluyen realmente la carta, independientemente de la ponderación. Proporciona contexto a la puntuación.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Qué se excluye</h2>
+        <p>Las cartas de identidad del héroe, los tres recursos básicos (Energía, Genio, Fuerza) y las cartas de campaña están excluidos del ranking. Las identidades y los recursos básicos aparecen en todos los mazos por defecto, por lo que no aportan información sobre las elecciones de construcción. Las cartas de campaña son específicas del escenario y nunca son elegidas libremente por los jugadores.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>A Menudo Juntas</h2>
+        <p>Para cada carta calculamos una <strong>puntuación de co-juego</strong> frente a todas las demás: ¿con qué frecuencia aparecen juntas en el mismo mazo? Si el 80% de los mazos que incluyen a Nick Fury también incluyen la Mansión de los Vengadores, su puntuación es 0,80. Se mide globalmente en todos los héroes y mazos.</p>
+        <p class="algo-formula__label" style="margin-top:.9rem">Puntuación de co-juego de la carta B respecto a la carta A:</p>
+        <div class="algo-formula">
+          <code>co_score(A→B) = mazos_con_ambas(A, B) / mazos_con(A)</code>
+        </div>
+        <p class="algo-formula__legend">Es una puntuación direccional: co_score(A→B) puede diferir de co_score(B→A). Se almacenan las 10 mejores parejas por carta; se muestran 5 por defecto en la sección <em>A Menudo Juntas</em> de cada carta.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Cartas Exclusivas</h2>
+        <p>La página de cada héroe muestra las 5 cartas con mayor ratio de exclusividad — cartas que este héroe usa de forma desproporcionada respecto a los demás. Una carta es &quot;exclusiva&quot; no porque solo este héroe pueda usarla, sino porque la juega mucho más que la media.</p>
+        <p class="algo-formula__label" style="margin-top:.9rem">Ratio de exclusividad de una carta para un héroe:</p>
+        <div class="algo-formula">
+          <code>exclusivity(carta, héroe) = frequency(carta, héroe) / avg_frequency(carta, otros_héroes_activos)</code>
+        </div>
+        <p class="algo-formula__legend"><em>Otros héroes activos</em> son aquellos que incluyen la carta en al menos el 5% de sus mazos. Las cartas usadas por el héroe objetivo en menos del 5% de mazos se excluyen. La lista se ordena por ratio de exclusividad puro.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Datos de <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>. Actualizado diariamente.</p>
+    <p class="site-footer__legal">Marvel Champions: The Card Game © Fantasy Flight Games / Asmodee. Marvel characters © Marvel. This site is not affiliated with or endorsed by Fantasy Flight Games, Asmodee, or Marvel.</p>
+  </footer>
+  <div id="consent-banner" style="display:none">
+    <p>Usamos Google Analytics para entender cómo se usa este sitio. No se recopilan datos personales sin tu consentimiento.</p>
+    <div class="consent-banner__actions">
+      <button id="consent-accept" class="consent-btn consent-btn--accept">Aceptar</button>
+      <button id="consent-reject" class="consent-btn consent-btn--reject">Rechazar</button>
+    </div>
+  </div>
+  <script>
+    window.__PAGE_SLUGS__ = {"heroes":"heroes","cards":"cartas","algorithm":"como-funciona","stability":"estabilidad","top":"top","bottom":"peores","staple":"fundamental","declining":"en-descenso","hype":"hype","late_bloomer":"descubrimiento-tardio","new":"reciente"};
+    window.__SEARCH_I18N__ = {
+      hero: "Héroe",
+      aggression: "Agresión",
+      justice: "Justicia",
+      leadership: "Liderazgo",
+      protection: "Protección",
+      basic: "Básico"
+    };
+  </script>
+  <script src="/assets/consent.js?v=mr36uoll"></script>
+  <script src="/assets/search.js?v=mr36uoll"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comment fonctionnent les scores — Marvel Compass</title>
+  <meta name="description" content="Découvrez les cartes les plus jouées pour chaque héros, basé sur les decks de la communauté sur MarvelCDB." />
+  <meta property="og:title" content="Comment fonctionnent les scores — Marvel Compass" />
+  <meta property="og:description" content="Découvrez les cartes les plus jouées pour chaque héros, basé sur les decks de la communauté sur MarvelCDB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.marvelcompass.fans/fr/comment-ca-marche/" />
+  <meta property="og:site_name" content="Marvel Compass" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Comment fonctionnent les scores — Marvel Compass" />
+  <meta name="twitter:description" content="Découvrez les cartes les plus jouées pour chaque héros, basé sur les decks de la communauté sur MarvelCDB." />
+  <link rel="canonical" href="https://www.marvelcompass.fans/fr/comment-ca-marche/" />
+  <link rel="alternate" hreflang="en" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="alternate" hreflang="it" href="https://www.marvelcompass.fans/it/come-funziona/" />
+  <link rel="alternate" hreflang="es" href="https://www.marvelcompass.fans/es/como-funciona/" />
+  <link rel="alternate" hreflang="fr" href="https://www.marvelcompass.fans/fr/comment-ca-marche/" />
+  <link rel="alternate" hreflang="de" href="https://www.marvelcompass.fans/de/wie-es-funktioniert/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.marvelcompass.fans/en/algorithm/" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/assets/style.css?v=mryk51ej" />
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7ETN7R1CB"></script>
+  <script>gtag('js',new Date());gtag('config','G-B7ETN7R1CB');</script>
+  
+</head>
+<body>
+  <header class="site-header">
+    <a href="/fr/" class="site-logo">
+      <span class="logo-icon">⚡</span>
+      <span>Marvel Compass</span>
+    </a>
+    <div class="site-search" id="site-search">
+      <input type="text" id="search-input" class="site-search__input"
+             placeholder="Rechercher héros et cartes…"
+             data-no-results="Aucun résultat"
+             autocomplete="off" spellcheck="false" />
+      <div id="search-dropdown" class="site-search__dropdown" hidden></div>
+    </div>
+    <nav class="lang-nav" aria-label="Language"><a href="/en/algorithm/"
+         class="lang-switch"
+         aria-label="EN"
+         title="EN"
+         onclick="document.cookie='lang=en;path=/;max-age=31536000'">🇬🇧</a><a href="/it/come-funziona/"
+         class="lang-switch"
+         aria-label="IT"
+         title="IT"
+         onclick="document.cookie='lang=it;path=/;max-age=31536000'">🇮🇹</a><a href="/es/como-funciona/"
+         class="lang-switch"
+         aria-label="ES"
+         title="ES"
+         onclick="document.cookie='lang=es;path=/;max-age=31536000'">🇪🇸</a><a href="/fr/comment-ca-marche/"
+         class="lang-switch lang-switch--active"
+         aria-label="FR"
+         title="FR"
+         onclick="document.cookie='lang=fr;path=/;max-age=31536000'">🇫🇷</a><a href="/de/wie-es-funktioniert/"
+         class="lang-switch"
+         aria-label="DE"
+         title="DE"
+         onclick="document.cookie='lang=de;path=/;max-age=31536000'">🇩🇪</a></nav>
+  </header>
+  <nav class="site-nav" aria-label="Explore">
+    <a href="/fr/top/" class="site-nav__link" onclick="document.cookie='lang=fr;path=/;max-age=31536000'">Top 100</a>
+    <a href="/fr/moins-joues/" class="site-nav__link" onclick="document.cookie='lang=fr;path=/;max-age=31536000'">Moins Jouées</a>
+    <a href="/fr/stabilite/" class="site-nav__link" onclick="document.cookie='lang=fr;path=/;max-age=31536000'">Stabilité</a>
+    <a href="/fr/comment-ca-marche/" class="site-nav__link site-nav__link--active" onclick="document.cookie='lang=fr;path=/;max-age=31536000'">Comment ça Marche</a>
+  </nav>
+  <main>
+    
+    <div class="algo-page">
+      <a href="/fr/" class="back-link">← Tous les Héros</a>
+      <h1 class="algo-page__title">Comment fonctionnent les scores</h1>
+
+      <p class="algo-page__intro">Chaque carte reçoit un <strong>score d'affinité</strong> pour chaque héros — un nombre entre 0 et 100 qui exprime la pertinence de cette carte dans la construction de decks actuels pour ce héros.</p>
+
+      <section class="algo-section">
+        <h2>Le problème de la fréquence brute</h2>
+        <p>Une approche naïve compterait dans quel pourcentage de decks apparaît une carte. Mais cela désavantage les nouvelles cartes : une carte du Core Set (2019) a eu des années pour accumuler des apparitions, tandis qu'une carte sortie le mois dernier en a très peu. Un simple comptage classerait toujours les anciennes cartes plus haut, indépendamment de la pertinence dans le méta actuel.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Décroissance exponentielle dans le temps</h2>
+        <p>Nous pondérons chaque deck selon sa date de création. Un deck d'aujourd'hui compte entièrement ; un deck d'il y a 90 jours compte pour moitié ; un deck d'il y a 180 jours compte pour un quart, et ainsi de suite.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Facteur de maturité</h2>
+        <p>La récence seule ne suffit pas. Lors du lancement d'une nouvelle extension, les joueurs incluent immédiatement ses cartes dans leurs decks — pas nécessairement parce que ces cartes sont indispensables, mais parce qu'elles sont nouvelles. Pour contrer ce hype du jour 1, nous appliquons un facteur de maturité à chaque paire (deck, carte) : une carte qui était toute nouvelle lors de la création du deck contribue moins qu'une présente dans le pool depuis des mois.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>La formule</h2>
+        <p class="algo-formula__label">Poids de récence d'un deck :</p>
+        <div class="algo-formula">
+          <code>recency_weight(deck) = e<sup>−λ × days_ago</sup></code>
+        </div>
+        <p class="algo-formula__label">Facteur de maturité d'une carte dans le deck :</p>
+        <div class="algo-formula">
+          <code>maturity_factor(deck, card) = 1 − e<sup>−card_age_at_deck / MATURITY_DAYS</sup></code>
+        </div>
+        <p class="algo-formula__label">Score d'affinité d'une carte :</p>
+        <div class="algo-formula">
+          <code>score(card) = Σ(in_deck × recency_weight × maturity_factor) / Σ(recency_weight) × 100</code>
+        </div>
+        <p class="algo-formula__legend">où <em>λ = ln(2) / 90</em> (décroissance de récence) et <em>MATURITY_DAYS = 60</em>. <em>card_age_at_deck</em> = jours entre la sortie du pack et la création du deck. Les cartes sans date de sortie connue sont traitées comme matures.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Paramètres actuels</h2>
+        <table class="algo-table">
+          <tr>
+            <th>Demi-vie de récence</th>
+            <td><strong>90 jours</strong> — Un deck créé il y a 90 jours contribue deux fois moins qu'un deck créé aujourd'hui.</td>
+          </tr>
+          <tr>
+            <th>Demi-vie de maturité</th>
+            <td><strong>60 jours</strong> — Une carte dans un deck 60 jours après la sortie de son pack contribue à 63% de son poids total ; après 180 jours, à 95%.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="algo-section">
+        <p class="algo-note">Le &quot;X / Y decks&quot; affiché sous chaque score est le comptage brut — combien de decks sur le total incluent réellement la carte, indépendamment de la pondération. Il donne du contexte au score.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Ce qui est exclu</h2>
+        <p>Les cartes d'identité du héros, les trois ressources de base (Énergie, Génie, Force) et les cartes de campagne sont exclues du classement. Les identités et les ressources de base sont présentes dans chaque deck par défaut et n'apportent aucune information sur les choix de construction. Les cartes de campagne sont spécifiques au scénario et ne sont jamais choisies librement par les joueurs.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Souvent Ensemble</h2>
+        <p>Pour chaque carte nous calculons un <strong>score de co-jeu</strong> par rapport à toutes les autres : à quelle fréquence les deux apparaissent-elles dans le même deck ? Si 80 % des decks incluant Nick Fury incluent aussi le Manoir des Avengers, leur score est 0,80. Cela est mesuré globalement sur tous les héros et tous les decks.</p>
+        <p class="algo-formula__label" style="margin-top:.9rem">Score de co-jeu de la carte B par rapport à la carte A :</p>
+        <div class="algo-formula">
+          <code>co_score(A→B) = decks_avec_les_deux(A, B) / decks_avec(A)</code>
+        </div>
+        <p class="algo-formula__legend">C'est un score directionnel : co_score(A→B) peut différer de co_score(B→A). Les 10 meilleures paires sont stockées par carte ; 5 sont affichées par défaut dans la section <em>Souvent Ensemble</em> de chaque carte.</p>
+      </section>
+
+      <section class="algo-section">
+        <h2>Cartes Exclusives</h2>
+        <p>La page de chaque héros affiche les 5 cartes au ratio d'exclusivité le plus élevé — des cartes que ce héros utilise de façon disproportionnée par rapport aux autres. Une carte est &quot;exclusive&quot; non parce que seul ce héros peut la jouer, mais parce qu'il la joue bien plus souvent que la moyenne.</p>
+        <p class="algo-formula__label" style="margin-top:.9rem">Ratio d'exclusivité d'une carte pour un héros :</p>
+        <div class="algo-formula">
+          <code>exclusivity(carte, héros) = frequency(carte, héros) / avg_frequency(carte, autres_héros_actifs)</code>
+        </div>
+        <p class="algo-formula__legend"><em>Les autres héros actifs</em> sont ceux qui incluent la carte dans au moins 5% de leurs decks. Les cartes utilisées par le héros cible dans moins de 5% des decks sont exclues. La liste est triée par ratio d'exclusivité pur.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Données de <a href="https://marvelcdb.com" target="_blank" rel="noopener">MarvelCDB</a>. Mis à jour quotidiennement.</p>
+    <p class="site-footer__legal">Marvel Champions: The Card Game © Fantasy Flight Games / Asmodee. Marvel characters © Marvel. This site is not affiliated with or endorsed by Fantasy Flight Games, Asmodee, or Marvel.</p>
+  </footer>
+  <div id="consent-banner" style="display:none">
+    <p>Nous utilisons Google Analytics pour comprendre comment ce site est utilisé. Aucune donnée personnelle n'est collectée sans votre consentement.</p>
+    <div class="consent-banner__actions">
+      <button id="consent-accept" class="consent-btn consent-btn--accept">Accepter</button>
+      <button id="consent-reject" class="consent-btn consent-btn--reject">Refuser</button>
+    </div>
+  </div>
+  <script>
+    window.__PAGE_SLUGS__ = {"heroes":"heros","cards":"cartes","algorithm":"comment-ca-marche","stability":"stabilite","top":"top","bottom":"moins-joues","staple":"incontournable","declining":"en-declin","hype":"hype","late_bloomer":"decouverte-tardive","new":"recente"};
+    window.__SEARCH_I18N__ = {
+      hero: "Héros",
+      aggression: "Agression",
+      justice: "Justice",
+      leadership: "Commandement",
+      protection: "Protection",
+      basic: "Basique"
+    };
+  </script>
+  <script src="/assets/consent.js?v=mryk51ej"></script>
+  <script src="/assets/search.js?v=mryk51ej"></script>
+</body>
+</html>

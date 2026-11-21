@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvel Compass</title>
+  <script>
+    var SUPPORTED = ["en","it","es","fr","de"];
+    var cookie = document.cookie.split(';').map(function(c){ return c.trim(); }).find(function(c){ return c.startsWith('lang='); });
+    var preferred = cookie ? cookie.split('=')[1] : 'en';
+    var lang = SUPPORTED.indexOf(preferred) !== -1 ? preferred : 'en';
+    window.location.replace('/' + lang + '/');
+  </script>
+</head>
+<body>
+  <p>Redirecting…</p>
+</body>
+</html>
